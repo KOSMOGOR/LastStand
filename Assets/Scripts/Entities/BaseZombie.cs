@@ -12,8 +12,10 @@ public class BaseZombie : BaseTileEntity
     public override void SetTile(Tile newTile) {
         if (tile != null) tile.zombies.Remove(this);
         tile = newTile;
-        tile.zombies.Add(this);
-        transform.position = tile.transform.position + tile.zombieOffset;
+        if (tile != null) {
+            tile.zombies.Add(this);
+            transform.position = tile.transform.position + tile.zombieOffset;
+        }
     }
 
     public void TakeTurn() {

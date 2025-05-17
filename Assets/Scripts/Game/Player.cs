@@ -23,6 +23,7 @@ public class Player : MonoBehaviour
     public int digitalCurrency = 0;
     public int playOpportunities = 0;
     public List<Card> cardsPlayedThisTurn = new();
+    public bool canRest = false;
     public Dictionary<string, CardData> allCardDatas;
 
     public static Player I;
@@ -57,11 +58,21 @@ public class Player : MonoBehaviour
         }
     }
 
+    public void ChooseNullCard() {
+        ChooseCard(null);
+    }
+
+    public bool CanPlayChosenCard() {
+        if (GameManager.I.currentState != GameState.PlayerTurn || chosenCard == null) return false;
+        if (GridManager.I.currentSelectedTile == null && chosenCard.cardData.gridSelectionType != GridSelectionType.None) return false;
+        if (playOpportunities == 0) return false;
+        return true;
+    }
+
     public void PlayChosenCard() {
-        if (GameManager.I.currentState != GameState.PlayerTurn || chosenCard == null) return;
-        if (GridManager.I.currentSelectedTile == null && chosenCard.cardData.gridSelectionType != GridSelectionType.None) return;
-        if (playOpportunities == 0) return;
+        if (!CanPlayChosenCard()) return;
         playOpportunities -= 1;
+        canRest = false;
         chosenCard.Play();
         MoveCardFromHandToDiscard(chosenCard);
         ChooseCard(null);
@@ -149,6 +160,7 @@ public class Player : MonoBehaviour
     public void OnPlayerTurnStart() {
         for (int i = 0; i < 3; ++i) DrawCardFromDeck();
         playOpportunities = 2;
+        canRest = true;
     }
 
     public void EndPlayerTurn(bool discardHand = true) {
@@ -161,6 +173,7 @@ public class Player : MonoBehaviour
     }
 
     public void MakeRest() {
+        if (!canRest || GameManager.I.currentState != GameState.PlayerTurn) return;
         ShuffleDiscardToDeck();
         Messenger.Broadcast(EventMessages.ON_PLAYER_MAKE_REST);
         EndPlayerTurn(false);

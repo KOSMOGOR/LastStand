@@ -3104,11 +3104,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1107874060}
         m_TargetAssemblyTypeName: Player, Assembly-CSharp
-        m_MethodName: ChooseCard
-        m_Mode: 2
+        m_MethodName: ChooseNullCard
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: Card, Assembly-CSharp
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -8935,9 +8935,29 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3700436541498250755, guid: a602d6d5fbb118947af7b2809695e668, type: 3}
+      propertyPath: playCard
+      value: 
+      objectReference: {fileID: 136375483}
+    - target: {fileID: 3700436541498250755, guid: a602d6d5fbb118947af7b2809695e668, type: 3}
       propertyPath: playerHp
       value: 
       objectReference: {fileID: 1917234567}
+    - target: {fileID: 3700436541498250755, guid: a602d6d5fbb118947af7b2809695e668, type: 3}
+      propertyPath: restButton
+      value: 
+      objectReference: {fileID: 659782396}
+    - target: {fileID: 3700436541498250755, guid: a602d6d5fbb118947af7b2809695e668, type: 3}
+      propertyPath: cancelButton
+      value: 
+      objectReference: {fileID: 695112197}
+    - target: {fileID: 3700436541498250755, guid: a602d6d5fbb118947af7b2809695e668, type: 3}
+      propertyPath: endTurnButton
+      value: 
+      objectReference: {fileID: 2030767237}
+    - target: {fileID: 3700436541498250755, guid: a602d6d5fbb118947af7b2809695e668, type: 3}
+      propertyPath: playCardButton
+      value: 
+      objectReference: {fileID: 136375483}
     - target: {fileID: 3700436541498250755, guid: a602d6d5fbb118947af7b2809695e668, type: 3}
       propertyPath: playOpportunitiesParent
       value: 

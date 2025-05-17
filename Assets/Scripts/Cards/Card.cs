@@ -29,6 +29,7 @@ public class Card : MonoBehaviour
         foreach (CardEffect effect in cardData.effects) {
             effect.Activate();
         }
+        Messenger<Card>.Broadcast(EventMessages.ON_CARD_PLAYED, this);
     }
 
     public void SetChosenStatus(bool status) {

@@ -8,8 +8,10 @@ public class BaseObstacle : BaseTileEntity
     public override void SetTile(Tile newTile) {
         if (tile != null) tile.obstacles.Remove(this);
         tile = newTile;
-        tile.obstacles.Add(this);
-        transform.position = tile.transform.position + tile.zombieOffset;
+        if (tile != null) {
+            tile.obstacles.Add(this);
+            transform.position = tile.transform.position + tile.zombieOffset;
+        }
     }
 
     public override void TakeDamage(int dmg, DamageType damageType, bool sendEventTakeDamage = true) {
