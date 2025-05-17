@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     public Transform parentHandTransform;
     public Transform topDiscardTransform;
     public Card cardPrefab;
+    public CardDeck startDeck;
 
     [Header("Internal")]
     public int playerHp;
@@ -35,8 +36,7 @@ public class Player : MonoBehaviour
     }
 
     public void SetDeckToBase() {
-        List<string> cardNames = new() {"Pistol", "Shotgun", "Basic Defence", "Minefield", "Additional Ammo", "Construction", "Overcharge", "Tranquility", "Torch"};
-        deck = cardNames.Select(cn => InitializeCard(cn)).ToList();
+        deck = startDeck.cards.Select(cd => InitializeCard(cd)).ToList();
         ShuffleDeck();
         handTransforms = parentHandTransform.GetComponentsInChildren<Transform>().Where(t => t != parentHandTransform).ToList();
         maxHandSize = handTransforms.Count;
@@ -45,10 +45,10 @@ public class Player : MonoBehaviour
 
     public void ChooseCard(Card card) {
         if (GameManager.I.currentState != GameState.PlayerTurn) return;
+        GridManager.I.SetCurrentGridSelectionType(GridSelectionType.None);
         if (chosenCard != null) {
             chosenCard.SetChosenStatus(false);
             chosenCard = null;
-            GridManager.I.SetCurrentGridSelectionType(GridSelectionType.None);
         }
         if (card && card.IsInHand()) {
             chosenCard = card;
@@ -152,6 +152,7 @@ public class Player : MonoBehaviour
     }
 
     public void EndPlayerTurn(bool discardHand = true) {
+        ChooseCard(null);
         cardsPlayedThisTurn = new();
         if (discardHand) DiscardHand();
         playOpportunities = 0;

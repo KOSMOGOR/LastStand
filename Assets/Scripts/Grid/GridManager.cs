@@ -11,14 +11,18 @@ public class GridManager : MonoBehaviour
     public float tileXOffset = 1, tileYOffset = 1;
     public GameObject tileSelectionSinglePrefab;
     public GameObject tileSelectionMultiplePrefab;
+    public GameObject hoverSelectionSinglePrefab;
+    public GameObject hoverSelectionMultiplePrefab;
 
     [Header("Internal")]
-    public Dictionary<Vector2Int, Tile> tiles = new();
     public Tile currentSelectedTile;
     public List<Tile> additionalSelectedTiles = new();
     public GridSelectionType currentGridSelectionType = GridSelectionType.None;
     GameObject tileSelectionSingle;
     List<GameObject> tileSelectionMultiple;
+    GameObject hoverSelectionSingle;
+    List<GameObject> hoverSelectionMultiple;
+    public Dictionary<Vector2Int, Tile> tiles = new();
 
     public static GridManager I;
 
@@ -29,6 +33,9 @@ public class GridManager : MonoBehaviour
         tileSelectionSingle = Instantiate(tileSelectionSinglePrefab, tileSelectionParent.transform);
         tileSelectionMultiple = Enumerable.Repeat<GameObject>(null, gridWidth + gridHeight).Select(_ => Instantiate(tileSelectionMultiplePrefab, tileSelectionParent.transform)).ToList();
         HideTileSelectionObjects();
+        hoverSelectionSingle = Instantiate(hoverSelectionSinglePrefab, tileSelectionParent.transform);
+        hoverSelectionMultiple = Enumerable.Repeat<GameObject>(null, gridWidth + gridHeight).Select(_ => Instantiate(hoverSelectionMultiplePrefab, tileSelectionParent.transform)).ToList();
+        HideHoverSelectionObjects();
     }
 
     public void MaybeGenerateGrid() {
@@ -116,6 +123,24 @@ public class GridManager : MonoBehaviour
         }
     }
 
+    public void HoverTile(Tile tile) {
+        HideHoverSelectionObjects();
+        if (tile == null) return;
+        if (currentGridSelectionType == GridSelectionType.None) return;
+        switch (currentGridSelectionType) {
+            case GridSelectionType.Tile:
+                SetSingleSelectionHover(tile);
+                break;
+            case GridSelectionType.Column:
+                for (int y = 0; y < gridHeight; ++y) {
+                    Tile additionalTile = GetTile(tile.xy.x, y);
+                    SetMultipleSelectionHover(additionalTile);
+                }
+                break; 
+            default: break;
+        }
+    }
+
     public void SetCurrentGridSelectionType(GridSelectionType gridSelectionType) {
         if (gridSelectionType == GridSelectionType.None) EmptySelection();
         currentGridSelectionType = gridSelectionType;
@@ -142,9 +167,25 @@ public class GridManager : MonoBehaviour
         tileSelection.transform.SetPositionAndRotation(tile.transform.position, tile.transform.rotation);
     }
 
+    void SetSingleSelectionHover(Tile tile) {
+        hoverSelectionSingle.SetActive(true);
+        hoverSelectionSingle.transform.SetPositionAndRotation(tile.transform.position, tile.transform.rotation);
+    }
+
+    void SetMultipleSelectionHover(Tile tile) {
+        GameObject hoverSelection = hoverSelectionMultiple.Find(ts => !ts.activeInHierarchy);
+        hoverSelection.SetActive(true);
+        hoverSelection.transform.SetPositionAndRotation(tile.transform.position, tile.transform.rotation);
+    }
+
     void HideTileSelectionObjects() {
         tileSelectionSingle.SetActive(false);
         tileSelectionMultiple.ForEach(ts => ts.SetActive(false));
+    }
+
+    void HideHoverSelectionObjects() {
+        hoverSelectionSingle.SetActive(false);
+        hoverSelectionMultiple.ForEach(ts => ts.SetActive(false));
     }
 
     public List<Tile> GetAllTilesInColumn(int x) {

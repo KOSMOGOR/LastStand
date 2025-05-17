@@ -26,6 +26,14 @@ public class Tile : MonoBehaviour
         GridManager.I.ChooseTile(this);
     }
 
+    void OnMouseEnter() {
+        GridManager.I.HoverTile(this);
+    }
+
+    void OnMouseExit() {
+        GridManager.I.HoverTile(null);
+    }
+
     public void SetSelected(bool selected) {
         isSelected = selected;
     }

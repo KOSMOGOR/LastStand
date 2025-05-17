@@ -48,6 +48,7 @@ MonoBehaviour:
   parentHandTransform: {fileID: 0}
   topDiscardTransform: {fileID: 0}
   cardPrefab: {fileID: 97067139330353971, guid: fff54a0f6efa27b4aad12376560196f8, type: 3}
+  startDeck: {fileID: 11400000, guid: ae294ac83042dc54d93dc5336ba2f9f5, type: 2}
   playerHp: 0
   handTransforms: []
   hand: []
@@ -58,3 +59,5 @@ MonoBehaviour:
   chosenCard: {fileID: 0}
   maxHandSize: 0
   digitalCurrency: 0
+  playOpportunities: 0
+  cardsPlayedThisTurn: []

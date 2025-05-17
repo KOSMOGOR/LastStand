@@ -51,6 +51,8 @@ MonoBehaviour:
   tileYOffset: 1.05
   tileSelectionSinglePrefab: {fileID: 4025396838993038772, guid: bad6dfb7f9c316546ac9fa06e20a81b3, type: 3}
   tileSelectionMultiplePrefab: {fileID: 5973229756009557189, guid: 44f1ca232e67ec6489b2bcff3ac04d01, type: 3}
+  hoverSelectionSinglePrefab: {fileID: 4025396838993038772, guid: 48fc5515626867143b22f02e0e7d44d5, type: 3}
+  hoverSelectionMultiplePrefab: {fileID: 5973229756009557189, guid: 3ec04a314f077ff468a605d14aaddc0c, type: 3}
   currentSelectedTile: {fileID: 0}
   additionalSelectedTiles: []
   currentGridSelectionType: 0
