@@ -8,7 +8,6 @@ using Random = UnityEngine.Random;
 public class GameManager : MonoBehaviour
 {
     public List<DayTime> dayTimeList;
-    public BaseZombie testZombie;
 
     [Header("Internal")]
     public GameState currentState;
@@ -37,7 +36,7 @@ public class GameManager : MonoBehaviour
                 GridManager.I.GenerateGrid();
                 Player.I.playerHp = Player.I.playerMaxHp;
                 Player.I.SetDeckToBase();
-                BaseZombie.SpawnZombie(testZombie, GridManager.I.GetTile(1, GridManager.I.gridHeight - 1));
+                // BaseZombie.SpawnZombie(testZombie, GridManager.I.GetTile(1, GridManager.I.gridHeight - 1));
                 ChangeState(GameState.PlayerTurn);
                 break;
             case GameState.PlayerTurn:

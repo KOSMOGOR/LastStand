@@ -4,7 +4,7 @@ public class Card : MonoBehaviour
 {
     public CardData cardData;
     public bool chosen = false;
-    public bool inHand = false;
+    public int handInd = -1; // -1 - not in hand
     public bool shown = false;
 
     SpriteRenderer spriteRenderer;
@@ -13,7 +13,7 @@ public class Card : MonoBehaviour
     void Awake() {
         spriteRenderer = GetComponent<SpriteRenderer>();
         col = GetComponent<BoxCollider2D>();
-        SetInHand(false);
+        SetHandInd(-1);
     }
 
     void OnMouseDown() {
@@ -35,9 +35,9 @@ public class Card : MonoBehaviour
         chosen = status;
     }
 
-    public void SetInHand(bool inHand) {
-        this.inHand = inHand;
-        SetShown(inHand);
+    public void SetHandInd(int handInd) {
+        this.handInd = handInd;
+        SetShown(handInd != -1);
     }
 
     public void SetShown(bool shown) {
@@ -45,4 +45,6 @@ public class Card : MonoBehaviour
         spriteRenderer.enabled = shown;
         col.enabled = shown;
     }
+
+    public bool IsInHand() { return handInd != -1; }
 }

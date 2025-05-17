@@ -25,11 +25,13 @@ public class Player : MonoBehaviour
     public Dictionary<string, CardData> allCardDatas;
 
     public static Player I;
+    Transform cardParentTransform;
 
     void Awake() {
         if (I != null) Destroy(gameObject);
         I = this;
         allCardDatas = Resources.LoadAll<CardData>("CardDatas").ToList().ToDictionary(c => c.cardName, elementSelector: c => c);
+        cardParentTransform = new GameObject("Cards").transform;
     }
 
     public void SetDeckToBase() {
@@ -48,7 +50,7 @@ public class Player : MonoBehaviour
             chosenCard = null;
             GridManager.I.SetCurrentGridSelectionType(GridSelectionType.None);
         }
-        if (card && card.inHand) {
+        if (card && card.IsInHand()) {
             chosenCard = card;
             chosenCard.SetChosenStatus(true);
             GridManager.I.SetCurrentGridSelectionType(chosenCard.cardData.gridSelectionType);
@@ -70,6 +72,7 @@ public class Player : MonoBehaviour
     public Card InitializeCard(CardData cardData) {
         Card card = Instantiate(cardPrefab);
         card.SetCardData(cardData);
+        card.transform.SetParent(cardParentTransform);
         return card;
     }
 
@@ -85,9 +88,9 @@ public class Player : MonoBehaviour
     }
 
     public void MoveCardFromHandToDiscard(Card card) {
-        card.SetInHand(false);
+        int handInd = card.handInd;
+        card.SetHandInd(-1);
         card.SetShown(true);
-        int handInd = hand.IndexOf(card);
         handTransformsOccupied[handInd] = false;
         hand.Remove(card);
         if (topDiscardCard != null) {
@@ -96,6 +99,7 @@ public class Player : MonoBehaviour
         }
         topDiscardCard = card;
         card.transform.SetPositionAndRotation(topDiscardTransform.position, topDiscardTransform.rotation);
+        discardPile.Add(card);
     }
 
     public void ShuffleDiscardToDeck() {
@@ -124,16 +128,16 @@ public class Player : MonoBehaviour
 
     void AddCardToHand(Card card) {
         if (hand.Count >= maxHandSize) return;
-        card.SetInHand(true);
-        hand.Add(card);
         int handTransformInd = handTransformsOccupied.FindIndex(hto => !hto);
+        card.SetHandInd(handTransformInd);
+        hand.Add(card);
         handTransformsOccupied[handTransformInd] = true;
         Transform handTransform = handTransforms[handTransformInd];
         card.transform.SetPositionAndRotation(handTransform.position, handTransform.rotation);
     }
 
     public void DiscardHand() {
-        foreach (Card card in hand) MoveCardFromHandToDiscard(card);
+        while (hand.Count() > 0) MoveCardFromHandToDiscard(hand.First());
     }
 
     public void TakeDamage(int dmg) {

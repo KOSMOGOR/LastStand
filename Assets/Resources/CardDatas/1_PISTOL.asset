@@ -19,4 +19,3 @@ MonoBehaviour:
   gridSelectionType: 2
   effects:
   - {fileID: 11400000, guid: bc429e0e83dade14ba10db80ddba5963, type: 2}
-  - {fileID: 11400000, guid: a2b1386199a02f64f95131e021923fef, type: 2}

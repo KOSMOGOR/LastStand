@@ -128,12 +128,12 @@ TextureImporter:
       name: CHOISE_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 7
+        y: 4
         width: 34
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -150,8 +150,52 @@ TextureImporter:
       name: CHOISE_1
       rect:
         serializedVersion: 2
-        x: 44
-        y: 3
+        x: 50
+        y: 6
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2850f2ba6df138944a9887a59e189ea7
+      internalID: -1947501327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHOISE_2
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 36
+        width: 36
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34a8cfdb4f2dea34981bb6af8d34f70d
+      internalID: 2065797438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHOISE_3
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 38
         width: 12
         height: 20
       alignment: 0
@@ -162,8 +206,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2850f2ba6df138944a9887a59e189ea7
-      internalID: -1947501327
+      spriteID: 689c5434563ed854283d7c0993770c24
+      internalID: -1237987054
       vertices: []
       indices: 
       edges: []
@@ -184,6 +228,7 @@ TextureImporter:
     nameFileIdTable:
       CHOISE_0: 1897513646
       CHOISE_1: -1947501327
+      CHOISE_2: 2065797438
       CHOISE_3: -1237987054
       CHOISE_4: -1834141095
   mipmapLimitGroupName: 

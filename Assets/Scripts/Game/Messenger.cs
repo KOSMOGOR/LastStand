@@ -144,6 +144,7 @@ static public class Messenger {
 		MessengerInternal.OnBroadcasting(eventType, mode);
 		var invocationList = MessengerInternal.GetInvocationList<Action>(eventType);
  
+		if (invocationList == null) return;
 		foreach(var callback in invocationList)
 			callback.Invoke();
 	}
@@ -189,6 +190,7 @@ static public class Messenger<T> {
 		MessengerInternal.OnBroadcasting(eventType, mode);
 		var invocationList = MessengerInternal.GetInvocationList<Action<T>>(eventType);
  
+		if (invocationList == null) return;
 		foreach(var callback in invocationList)
 			callback.Invoke(arg1);
 	}
@@ -235,6 +237,7 @@ static public class Messenger<T, U> {
 		MessengerInternal.OnBroadcasting(eventType, mode);
 		var invocationList = MessengerInternal.GetInvocationList<Action<T, U>>(eventType);
  
+		if (invocationList == null) return;
 		foreach(var callback in invocationList)
 			callback.Invoke(arg1, arg2);
 	}
@@ -281,6 +284,7 @@ static public class Messenger<T, U, V> {
 		MessengerInternal.OnBroadcasting(eventType, mode);
 		var invocationList = MessengerInternal.GetInvocationList<Action<T, U, V>>(eventType);
  
+		if (invocationList == null) return;
 		foreach(var callback in invocationList)
 			callback.Invoke(arg1, arg2, arg3);
 	}

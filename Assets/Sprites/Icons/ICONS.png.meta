@@ -116,7 +116,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -158,10 +158,10 @@ TextureImporter:
       name: ICONS_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 99
-        width: 31
-        height: 26
+        x: 1
+        y: 100
+        width: 29
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,10 +180,10 @@ TextureImporter:
       name: ICONS_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 99
-        width: 31
-        height: 26
+        x: 33
+        y: 100
+        width: 29
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,10 +202,10 @@ TextureImporter:
       name: ICONS_2
       rect:
         serializedVersion: 2
-        x: 68
-        y: 97
-        width: 24
-        height: 30
+        x: 69
+        y: 98
+        width: 22
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,10 +224,10 @@ TextureImporter:
       name: ICONS_3
       rect:
         serializedVersion: 2
-        x: 100
-        y: 97
-        width: 24
-        height: 30
+        x: 101
+        y: 98
+        width: 22
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -246,10 +246,10 @@ TextureImporter:
       name: ICONS_4
       rect:
         serializedVersion: 2
-        x: 1
-        y: 68
-        width: 30
-        height: 24
+        x: 128
+        y: 124
+        width: 4
+        height: 4
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,10 +268,10 @@ TextureImporter:
       name: ICONS_5
       rect:
         serializedVersion: 2
-        x: 33
-        y: 68
-        width: 30
-        height: 24
+        x: 128
+        y: 108
+        width: 4
+        height: 4
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,9 +290,9 @@ TextureImporter:
       name: ICONS_6
       rect:
         serializedVersion: 2
-        x: 68
-        y: 68
-        width: 24
+        x: 2
+        y: 69
+        width: 28
         height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -312,9 +312,9 @@ TextureImporter:
       name: ICONS_7
       rect:
         serializedVersion: 2
-        x: 100
-        y: 68
-        width: 24
+        x: 34
+        y: 69
+        width: 28
         height: 22
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -334,10 +334,10 @@ TextureImporter:
       name: ICONS_8
       rect:
         serializedVersion: 2
-        x: 1
-        y: 35
-        width: 28
-        height: 26
+        x: 69
+        y: 69
+        width: 22
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -356,10 +356,10 @@ TextureImporter:
       name: ICONS_9
       rect:
         serializedVersion: 2
-        x: 33
-        y: 35
-        width: 28
-        height: 26
+        x: 101
+        y: 69
+        width: 22
+        height: 20
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -378,10 +378,10 @@ TextureImporter:
       name: ICONS_10
       rect:
         serializedVersion: 2
-        x: 64
-        y: 34
-        width: 33
-        height: 29
+        x: 2
+        y: 36
+        width: 26
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -400,10 +400,10 @@ TextureImporter:
       name: ICONS_11
       rect:
         serializedVersion: 2
-        x: 96
-        y: 34
-        width: 32
-        height: 29
+        x: 34
+        y: 36
+        width: 26
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -422,10 +422,10 @@ TextureImporter:
       name: ICONS_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 33
-        height: 30
+        x: 65
+        y: 35
+        width: 31
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -444,10 +444,10 @@ TextureImporter:
       name: ICONS_13
       rect:
         serializedVersion: 2
-        x: 32
-        y: 1
-        width: 26
-        height: 30
+        x: 97
+        y: 35
+        width: 31
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -466,10 +466,10 @@ TextureImporter:
       name: ICONS_14
       rect:
         serializedVersion: 2
-        x: 37
-        y: 5
-        width: 22
-        height: 22
+        x: 0
+        y: 1
+        width: 32
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -484,11 +484,77 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: ICONS_15
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 2
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ba4b8ea47a94ec40b4bb53af5519acf
+      internalID: -231546476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICONS_17
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 3
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4909604cbc627a40b622601fe8768ef
+      internalID: 442681940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICONS_18
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 4
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77da1a956209ad6429813b9f398b55f6
+      internalID: -1240160244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 776f0b6bf86e78049b31770a0ff8b618
     internalID: 0
     vertices: []
     indices: 
@@ -505,6 +571,10 @@ TextureImporter:
       ICONS_12: 2030710438247332936
       ICONS_13: 6499849727885303510
       ICONS_14: -7137872220903551774
+      ICONS_15: -231546476
+      ICONS_16: -804123210
+      ICONS_17: 442681940
+      ICONS_18: -1240160244
       ICONS_2: -4176920436240213054
       ICONS_3: 7228785389488148030
       ICONS_4: -7874067496603088461
