@@ -100,9 +100,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f418479ca9c85f947b04d990e739c272, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tile: {fileID: 0}
-  maxHp: 0
+  maxHp: 6
   hp: 0
+  tile: {fileID: 0}
   speed: 0.75
+  damage: 1
   progression: 0
   progressionThreshold: 1
+  stunned: 0
