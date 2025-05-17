@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cedc132a193079140a8158eb1e84166e, type: 3}
+  m_Name: 8_TRANQUILITY
+  m_EditorClassIdentifier: 
+  cardName: Tranquility
+  aggressionCost: 2
+  cardSprite: {fileID: 21300000, guid: d5c4a94e882b0ff41ae782006f00dbe3, type: 3}
+  gridSelectionType: 0
+  effects: []
