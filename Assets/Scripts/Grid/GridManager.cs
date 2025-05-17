@@ -13,6 +13,8 @@ public class GridManager : MonoBehaviour
     public GameObject tileSelectionMultiplePrefab;
     public GameObject hoverSelectionSinglePrefab;
     public GameObject hoverSelectionMultiplePrefab;
+    public Transform playerTransform;
+    public float playerPositionMultiplier = 1;
 
     [Header("Internal")]
     public Tile currentSelectedTile;
@@ -104,6 +106,7 @@ public class GridManager : MonoBehaviour
     public void ChooseTile(Tile tile) {
         HideTileSelectionObjects();
         if (currentGridSelectionType == GridSelectionType.None) return;
+        MovePlayerXToTile(tile);
         EmptySelection();
         currentSelectedTile = tile;
         tile.SetSelected(true);
@@ -127,6 +130,7 @@ public class GridManager : MonoBehaviour
         HideHoverSelectionObjects();
         if (tile == null) return;
         if (currentGridSelectionType == GridSelectionType.None) return;
+        if (currentSelectedTile == null) MovePlayerXToTile(tile);
         switch (currentGridSelectionType) {
             case GridSelectionType.Tile:
                 SetSingleSelectionHover(tile);
@@ -192,6 +196,12 @@ public class GridManager : MonoBehaviour
         List<Tile> columnTiles = new();
         for (int y = 0; y < gridHeight; ++y) columnTiles.Add(GetTile(x, y));
         return columnTiles;
+    }
+
+    void MovePlayerXToTile(Tile tile) {
+        Vector3 pos = playerTransform.position;
+        pos.x = (tile.transform.position.x - transform.position.x) * playerPositionMultiplier + transform.position.x;
+        playerTransform.position = pos;
     }
 }
 
