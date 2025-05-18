@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1010926703938435420}
   - component: {fileID: 5755272227707735194}
-  - component: {fileID: 3820582994718389918}
+  - component: {fileID: 6568082158783468804}
   m_Layer: 0
-  m_Name: Zombie
+  m_Name: ChickenJockeyZombie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 4174866431905101710, guid: 054aa9a45b266c34880aff882b9a1d5a, type: 3}
+  m_Sprite: {fileID: 1396295013652517339, guid: 054aa9a45b266c34880aff882b9a1d5a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -88,7 +88,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3820582994718389918
+--- !u!114 &6568082158783468804
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,15 +97,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1296630035594389351}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 558220433b28aff4299fda1ee83a0c3c, type: 3}
+  m_Script: {fileID: 11500000, guid: 8be5b3d696dc03c45999f0ba39b3ab9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 10
+  maxHp: 4
   hp: 0
   tile: {fileID: 0}
-  speed: 1
-  damage: 2
+  speed: 2
+  damage: 3
   progression: 0
   progressionThreshold: 1
   descrription: 
   stunned: 0
+  zombieSpawnOnDeathPrefab: {fileID: 3820582994718389918, guid: 5073b62df4e1a644598e15ff05d2d208, type: 3}

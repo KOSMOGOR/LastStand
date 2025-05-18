@@ -6,7 +6,7 @@ public abstract class BaseTileEntity : MonoBehaviour
     public int hp;
     public Tile tile;
 
-    void Start() {
+    protected void Start() {
         hp = maxHp;
     }
 

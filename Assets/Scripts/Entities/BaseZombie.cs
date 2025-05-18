@@ -8,6 +8,7 @@ public class BaseZombie : BaseTileEntity
     public int damage;
     [SerializeField] float progression = 0;
     public float progressionThreshold = 1;
+    [TextArea] public string descrription;
 
     public bool stunned = false;
 
