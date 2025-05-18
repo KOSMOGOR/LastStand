@@ -55,6 +55,7 @@ public class GameManager : MonoBehaviour
             case GameState.ZombieTurn:
                 AllZombiesProgress();
                 AllZombiesTakeTurn();
+                GridManager.I.SetZombieVisibility();
                 bool zombiesExists = GridManager.I.GetZombiesCount() > 0;
                 SpawnWaveZombies(zombiesExists);
                 ChangeState(GameState.ChangeTime);

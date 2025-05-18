@@ -10,6 +10,12 @@ public class BaseZombie : BaseTileEntity
 
     public bool stunned = false;
 
+    SpriteRenderer sprite;
+
+    void Awake() {
+        sprite = GetComponent<SpriteRenderer>();
+    }
+
     public override void SetTile(Tile newTile) {
         if (tile != null) tile.zombies.Remove(this);
         tile = newTile;
@@ -74,5 +80,9 @@ public class BaseZombie : BaseTileEntity
 
     public static void SpawnZombie(BaseZombie prefab, Tile tile) {
         Instantiate(prefab).SetTile(tile);
+    }
+
+    public void SetVisible(bool visible) {
+        sprite.enabled = visible;
     }
 }

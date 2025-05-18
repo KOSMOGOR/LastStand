@@ -203,6 +203,13 @@ public class GridManager : MonoBehaviour
         pos.x = (tile.transform.position.x - transform.position.x) * playerPositionMultiplier + transform.position.x;
         playerTransform.position = pos;
     }
+
+    public void SetZombieVisibility() {
+        foreach (Tile tile in tiles.Values) {
+            for (int i = 0; i < tile.zombies.Count; ++i)
+                tile.zombies[i].SetVisible(i == 0);
+        }
+    }
 }
 
 public static class MovementDirection {
