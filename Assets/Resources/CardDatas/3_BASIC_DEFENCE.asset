@@ -18,5 +18,8 @@ MonoBehaviour:
   cardType: 1
   cardSprite: {fileID: 21300000, guid: 3f2f27d18acce0a4986a2f455e6a7072, type: 3}
   gridSelectionType: 1
+  playConditions:
+  - {fileID: 11400000, guid: 9c0adb5e203159348bd7fb0638c5dd3e, type: 2}
+  - {fileID: 11400000, guid: 34848c5a610afb44084796540cf89c68, type: 2}
   effects:
   - {fileID: 11400000, guid: ad4d899dc6e8bcd4090a5216c243329c, type: 2}

@@ -68,7 +68,7 @@ public class Player : MonoBehaviour
         if (GameManager.I.currentState != GameState.PlayerTurn || chosenCard == null) return false;
         if (GridManager.I.currentSelectedTile == null && chosenCard.cardData.gridSelectionType != GridSelectionType.None) return false;
         if (playOpportunities == 0) return false;
-        return true;
+        return chosenCard.CanPlay();
     }
 
     public void PlayChosenCard() {
@@ -169,6 +169,7 @@ public class Player : MonoBehaviour
     }
 
     public void EndPlayerTurn(bool discardHand = true) {
+        canRest = false;
         ChooseCard(null);
         cardsPlayedThisTurn = new();
         if (discardHand) DiscardHand();

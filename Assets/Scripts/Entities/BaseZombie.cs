@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class BaseZombie : BaseTileEntity
@@ -80,6 +81,7 @@ public class BaseZombie : BaseTileEntity
 
     public static void SpawnZombie(BaseZombie prefab, Tile tile) {
         Instantiate(prefab).SetTile(tile);
+        new List<BaseObstacle>(tile.obstacles).ForEach(o => o.Die());
     }
 
     public void SetVisible(bool visible) {

@@ -9452,6 +9452,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 136375483}
     - target: {fileID: 3700436541498250755, guid: a602d6d5fbb118947af7b2809695e668, type: 3}
+      propertyPath: descriptionText
+      value: 
+      objectReference: {fileID: 188008627}
+    - target: {fileID: 3700436541498250755, guid: a602d6d5fbb118947af7b2809695e668, type: 3}
       propertyPath: morningEveningOverlay
       value: 
       objectReference: {fileID: 1503944100}

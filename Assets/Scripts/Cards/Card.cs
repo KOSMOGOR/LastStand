@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 
 public class Card : MonoBehaviour
@@ -48,4 +49,9 @@ public class Card : MonoBehaviour
     }
 
     public bool IsInHand() { return handInd != -1; }
+
+    public bool CanPlay() {
+        if (cardData.playConditions.Count == 0) return true;
+        return cardData.playConditions.All(pc => pc.CanPlay());
+    }
 }

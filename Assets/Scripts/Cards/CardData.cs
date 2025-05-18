@@ -10,7 +10,8 @@ public class CardData : ScriptableObject
     public CardType cardType;
     public Sprite cardSprite;
     public GridSelectionType gridSelectionType = GridSelectionType.None;
-    public List<CardEffect> effects;
+    public List<CardPlayCondition> playConditions = new();
+    public List<CardEffect> effects = new();
 }
 
 public enum CardType {
