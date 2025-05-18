@@ -77,7 +77,6 @@ public class Player : MonoBehaviour
         MoveCardFromHandToDiscard(chosenCard);
         ChooseCard(null);
         cardsPlayedThisTurn.Add(chosenCard);
-        if (playOpportunities == 0) EndPlayerTurn();
     }
 
     public Card InitializeCard(CardData cardData) {

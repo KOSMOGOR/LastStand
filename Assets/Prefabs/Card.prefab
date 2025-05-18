@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 476177779985015069}
   - component: {fileID: 5709543091033174684}
-  - component: {fileID: 3008590756369529863}
+  - component: {fileID: 6232827938945775808}
   - component: {fileID: 97067139330353971}
   m_Layer: 0
   m_Name: Card
@@ -89,7 +89,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &3008590756369529863
+--- !u!61 &6232827938945775808
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -127,13 +127,13 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.88, y: 1.36}
+    oldSize: {x: 7.04, y: 10.88}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.88, y: 1.36}
+  m_Size: {x: 7.04, y: 10.88}
   m_EdgeRadius: 0
 --- !u!114 &97067139330353971
 MonoBehaviour:
