@@ -14,17 +14,22 @@ public class MenuManager : MonoBehaviour
     public Button cancelButton;
     public Button restButton;
     public Button endTurnButton;
+    public GameObject morningEveningOverlay;
+    public GameObject nightOverlay;
 
     void Awake() {
         playOpportunities = playOpportunitiesParent.GetComponentsInChildren<Transform>().Where(t => t != playOpportunitiesParent).Select(t => t.gameObject).ToList();
         playOpportunities.ForEach(po => po.SetActive(false));
         poActiveCount = 0;
+        morningEveningOverlay.SetActive(false);
+        nightOverlay.SetActive(false);
     }
 
     void Update() {
         SetPlayOpportunities();
         SetPlayerHp();
         SetButtonsAvailable();
+        SetDayTimeOverlays();
     }
 
     void SetPlayOpportunities() {
@@ -44,5 +49,19 @@ public class MenuManager : MonoBehaviour
         cancelButton.gameObject.SetActive(Player.I.chosenCard != null);
         restButton.gameObject.SetActive(Player.I.canRest);
         endTurnButton.gameObject.SetActive(GameManager.I.currentState == GameState.PlayerTurn);
+    }
+
+    void SetDayTimeOverlays() {
+        DayTime currentDayTime = GameManager.I.GetCurrentDayTime();
+        if (currentDayTime == DayTime.Morning || currentDayTime == DayTime.Evening) {
+            morningEveningOverlay.SetActive(true);
+            nightOverlay.SetActive(false);
+        } else if (currentDayTime == DayTime.Night) {
+            morningEveningOverlay.SetActive(false);
+            nightOverlay.SetActive(true);
+        } else {
+            morningEveningOverlay.SetActive(false);
+            nightOverlay.SetActive(false);
+        }
     }
 }

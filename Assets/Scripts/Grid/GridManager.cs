@@ -99,7 +99,7 @@ public class GridManager : MonoBehaviour
     }
 
     public Tile GetTileToSpawnZombie() {
-        Vector2Int pos = new(Random.Range(0, gridWidth - 1), gridHeight - 1);
+        Vector2Int pos = new(Random.Range(0, gridWidth), gridHeight - 1);
         return tiles[pos];
     }
 

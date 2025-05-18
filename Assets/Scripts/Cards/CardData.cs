@@ -6,6 +6,7 @@ public class CardData : ScriptableObject
 {
     public string cardName;
     public int aggressionCost;
+    [TextArea] public string cardDescription;
     public CardType cardType;
     public Sprite cardSprite;
     public GridSelectionType gridSelectionType = GridSelectionType.None;

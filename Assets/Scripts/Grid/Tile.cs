@@ -15,7 +15,7 @@ public class Tile : MonoBehaviour
     public bool isSelected = false;
 
     void Start() {
-        GetComponent<SpriteRenderer>().sprite = sprites[Random.Range(0, sprites.Count - 1)];
+        GetComponent<SpriteRenderer>().sprite = sprites[Random.Range(0, sprites.Count)];
     }
 
     void Update() {
