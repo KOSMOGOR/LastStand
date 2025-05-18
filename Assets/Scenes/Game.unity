@@ -7224,7 +7224,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1911017902}
   m_Layer: 0
-  m_Name: TopDiscard
+  m_Name: TopDiscardTransform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

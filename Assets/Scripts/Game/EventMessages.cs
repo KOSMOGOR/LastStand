@@ -13,4 +13,6 @@ public static class EventMessages
     public static string ON_PLAYER_END_TURN = "ON_PLAYER_END_TURN";
     public static string ON_PLAYER_MAKE_REST = "ON_PLAYER_MAKE_REST";
     public static string ON_CARD_PLAYED = "ON_CARD_PLAYED"; // <Card>
+    public static string EVALUATE_ZOMBIE_SPEED = "EVALUATE_ZOMBIE_SPEED"; // <BaseZombie>, <float>
+    public static string EVALUATE_ZOMBIE_DAMAGE = "EVALUATE_ZOMBIE_DAMAGE"; // <BaseZombie>, <int>
 }

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class BaseZombie : BaseTileEntity
@@ -19,7 +20,10 @@ public class BaseZombie : BaseTileEntity
     }
 
     public void Progress() {
-        progression += speed;
+        float currentSpeed = speed;
+        Messenger<BaseZombie>.Broadcast<float>(EventMessages.EVALUATE_ZOMBIE_SPEED, this, ds => currentSpeed += ds);
+        currentSpeed = Mathf.Max(currentSpeed, 0.25f);
+        progression += currentSpeed;
     }
 
     public bool CanTakeTurn() {
@@ -31,10 +35,13 @@ public class BaseZombie : BaseTileEntity
         progression -= progressionThreshold;
         Tile newTile = GridManager.I.GetTileSafe(tile.xy + MovementDirection.DOWN);
         BaseObstacle obstacle = newTile.GetFirstBlockingObstacle();
-        if (tile.xy.y == 0 && newTile.xy.y == 0) Player.I.TakeDamage(damage);
+        int currentDamage = damage;
+        Messenger<BaseZombie>.Broadcast<int>(EventMessages.EVALUATE_ZOMBIE_DAMAGE, this, dd => currentDamage += dd);
+        currentDamage = Math.Max(currentDamage, 1);
+        if (tile.xy.y == 0 && newTile.xy.y == 0) Player.I.TakeDamage(currentDamage);
         else if (obstacle != null) {
-            obstacle.TakeDamage(damage, DamageType.Zombie);
-            Messenger<BaseZombie, int, BaseObstacle>.Broadcast(EventMessages.ON_ZOMBIE_DEAL_DAMAGE_TO_OBSTACLE, this, damage, obstacle);
+            obstacle.TakeDamage(currentDamage, DamageType.Zombie);
+            Messenger<BaseZombie, int, BaseObstacle>.Broadcast(EventMessages.ON_ZOMBIE_DEAL_DAMAGE_TO_OBSTACLE, this, currentDamage, obstacle);
         }
         else TryMove(newTile);
     }

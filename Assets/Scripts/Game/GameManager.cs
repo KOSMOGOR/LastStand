@@ -21,6 +21,16 @@ public class GameManager : MonoBehaviour
     void Awake() {
         if (I != null) Destroy(gameObject);
         I = this;
+        Messenger<BaseZombie>.AddListener<float>(EventMessages.EVALUATE_ZOMBIE_SPEED, z => GetCurrentDayTime() switch {
+            DayTime.Day => -0.5f,
+            DayTime.Night => 0.25f,
+            _ => 0,
+        });
+        Messenger<BaseZombie>.AddListener<int>(EventMessages.EVALUATE_ZOMBIE_DAMAGE, z => GetCurrentDayTime() switch {
+            DayTime.Day => -1,
+            DayTime.Night => 1,
+            _ => 0,
+        });
         zombieSpawnInfos = Resources.LoadAll<BaseZombieSpawnInfo>("ZombieSpawnInfos").ToList();
     }
 
