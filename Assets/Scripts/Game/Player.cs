@@ -1,6 +1,8 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Player : MonoBehaviour
 {
@@ -73,10 +75,10 @@ public class Player : MonoBehaviour
         if (!CanPlayChosenCard()) return;
         playOpportunities -= 1;
         canRest = false;
+        cardsPlayedThisTurn.Add(chosenCard);
         chosenCard.Play();
         MoveCardFromHandToDiscard(chosenCard);
         ChooseCard(null);
-        cardsPlayedThisTurn.Add(chosenCard);
     }
 
     public Card InitializeCard(CardData cardData) {
@@ -154,6 +156,10 @@ public class Player : MonoBehaviour
         playerHp -= dmg;
         Messenger<int>.Broadcast(EventMessages.ON_PLAYER_TAKE_DAMAGE, dmg);
         if (playerHp <= 0) GameManager.I.ChangeState(GameState.Defeated);
+    }
+
+    public void TakeHeal(int heal) {
+        playerHp = Math.Min(playerHp + heal, playerMaxHp);
     }
 
     public void OnPlayerTurnStart() {

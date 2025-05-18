@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9b8225fdc7cbe7438f11343feccfc91, type: 3}
   m_Name: ConstructionRePlay
   m_EditorClassIdentifier: 
-  cardTypesInclude: 
+  cardTypesInclude: 01000000
   cardDatasExlude: []
