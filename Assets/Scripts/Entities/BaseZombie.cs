@@ -23,7 +23,7 @@ public class BaseZombie : BaseTileEntity
         while (progression >= progressionThreshold) {
             progression -= progressionThreshold;
             Tile newTile = GridManager.I.GetTileSafe(tile.xy + MovementDirection.DOWN);
-            BaseObstacle obstacle = tile.GetFirstBlockingObstacle();
+            BaseObstacle obstacle = newTile.GetFirstBlockingObstacle();
             if (tile.xy.y == 0 && newTile.xy.y == 0) Player.I.TakeDamage(damage);
             else if (obstacle != null) {
                 obstacle.TakeDamage(damage, DamageType.Zombie);

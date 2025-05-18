@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class LandmineObstacle : BaseObstacle
@@ -14,7 +16,7 @@ public class LandmineObstacle : BaseObstacle
 
     void OnZombieMove(BaseZombie zombie, Tile newTile) {
         if (newTile == tile) {
-            newTile.zombies.ForEach(z => z.TakeDamage(explosionDamage, DamageType.Obstacle));
+            new List<BaseZombie>(newTile.zombies).ForEach(z => z.TakeDamage(explosionDamage, DamageType.Obstacle));
             Die();
         }
     }
