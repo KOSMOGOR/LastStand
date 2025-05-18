@@ -14,6 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardName: Tranquility
   aggressionCost: 2
+  cardDescription: Heal 5. Perform a Rest ability.
+  cardType: 2
   cardSprite: {fileID: 21300000, guid: d5c4a94e882b0ff41ae782006f00dbe3, type: 3}
   gridSelectionType: 0
-  effects: []
+  effects:
+  - {fileID: 11400000, guid: df1b4c6b938fd2c4a91fc3eafbde5dc4, type: 2}
+  - {fileID: 11400000, guid: 89364e3fbb8174f4ea96145a8616afa7, type: 2}
