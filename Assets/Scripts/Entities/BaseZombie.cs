@@ -18,19 +18,25 @@ public class BaseZombie : BaseTileEntity
         }
     }
 
-    public void TakeTurn() {
+    public void Progress() {
         progression += speed;
-        while (progression >= progressionThreshold) {
-            progression -= progressionThreshold;
-            Tile newTile = GridManager.I.GetTileSafe(tile.xy + MovementDirection.DOWN);
-            BaseObstacle obstacle = newTile.GetFirstBlockingObstacle();
-            if (tile.xy.y == 0 && newTile.xy.y == 0) Player.I.TakeDamage(damage);
-            else if (obstacle != null) {
-                obstacle.TakeDamage(damage, DamageType.Zombie);
-                Messenger<BaseZombie, int, BaseObstacle>.Broadcast(EventMessages.ON_ZOMBIE_DEAL_DAMAGE_TO_OBSTACLE, this, damage, obstacle);
-            }
-            else TryMove(newTile);
+    }
+
+    public bool CanTakeTurn() {
+        return progression >= progressionThreshold;
+    }
+
+    public void TakeTurn() {
+        if (!CanTakeTurn()) return;
+        progression -= progressionThreshold;
+        Tile newTile = GridManager.I.GetTileSafe(tile.xy + MovementDirection.DOWN);
+        BaseObstacle obstacle = newTile.GetFirstBlockingObstacle();
+        if (tile.xy.y == 0 && newTile.xy.y == 0) Player.I.TakeDamage(damage);
+        else if (obstacle != null) {
+            obstacle.TakeDamage(damage, DamageType.Zombie);
+            Messenger<BaseZombie, int, BaseObstacle>.Broadcast(EventMessages.ON_ZOMBIE_DEAL_DAMAGE_TO_OBSTACLE, this, damage, obstacle);
         }
+        else TryMove(newTile);
     }
     
     public void TryMove(Tile newTile) {

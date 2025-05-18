@@ -43,6 +43,7 @@ public class GameManager : MonoBehaviour
                 Player.I.OnPlayerTurnStart();
                 break;
             case GameState.ZombieTurn:
+                AllZombiesProgress();
                 AllZombiesTakeTurn();
                 bool zombiesExists = GridManager.I.GetZombiesCount() > 0;
                 SpawnWaveZombies(zombiesExists);
@@ -64,9 +65,18 @@ public class GameManager : MonoBehaviour
         StartCoroutine(ChangeStateCoroutine());
     }
 
-    public void AllZombiesTakeTurn() {
+    public void AllZombiesProgress() {
         List<BaseZombie> zombies = GridManager.I.GetAllZombies();
-        zombies.ForEach(z => z.TakeTurn());
+        zombies.ForEach(z => z.Progress());
+    }
+
+    public void AllZombiesTakeTurn() {
+        while (true) {
+            List<BaseZombie> zombiesCanTakeTurn = GridManager.I.GetAllZombies().Where(z => z.CanTakeTurn()).ToList();
+            if (zombiesCanTakeTurn.Count == 0) return;
+            zombiesCanTakeTurn.ForEach(z => z.TakeTurn());
+            Messenger.Broadcast(EventMessages.ON_ALL_ZOMBIE_TAKE_TURN);
+        }
     }
 
     public BaseZombieSpawnInfo SelectZombieToSpawn(int aggressionPoints) {

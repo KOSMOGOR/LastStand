@@ -7,16 +7,16 @@ public class LandmineObstacle : BaseObstacle
     public int explosionDamage;
 
     void OnEnable() {
-        Messenger<BaseZombie, Tile>.AddListener(EventMessages.ON_ZOMBIE_MOVE, OnZombieMove);
+        Messenger.AddListener(EventMessages.ON_ALL_ZOMBIE_TAKE_TURN, OnAllZombieTakeTurn);
     }
 
     void OnDisable() {
-        Messenger<BaseZombie, Tile>.RemoveListener(EventMessages.ON_ZOMBIE_MOVE, OnZombieMove);
+        Messenger.RemoveListener(EventMessages.ON_ALL_ZOMBIE_TAKE_TURN, OnAllZombieTakeTurn);
     }
 
-    void OnZombieMove(BaseZombie zombie, Tile newTile) {
-        if (newTile == tile) {
-            new List<BaseZombie>(newTile.zombies).ForEach(z => z.TakeDamage(explosionDamage, DamageType.Obstacle));
+    void OnAllZombieTakeTurn() {
+        if (tile.zombies.Count > 0) {
+            BaseExplosiveDamageEffect.ApplyExplosiveDamage(tile, explosionDamage);
             Die();
         }
     }
