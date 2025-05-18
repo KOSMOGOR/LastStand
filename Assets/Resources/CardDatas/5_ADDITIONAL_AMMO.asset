@@ -14,6 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardName: Additional Ammo
   aggressionCost: 2
+  cardDescription: Double the next Shooting damage dealt this turn.
+  cardType: 2
   cardSprite: {fileID: 21300000, guid: 17dc48c6bb40a5c4b8c9d99fe52c74bf, type: 3}
   gridSelectionType: 0
-  effects: []
+  effects:
+  - {fileID: 11400000, guid: acd5bc778ab44744a8a3cf1c273cc1c5, type: 2}

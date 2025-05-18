@@ -14,6 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardName: Torch
   aggressionCost: 1
+  cardDescription: Stun the closest zombie in each lane.
+  cardType: 2
   cardSprite: {fileID: 21300000, guid: b9f12ce0b7d03844394c350c719f0461, type: 3}
   gridSelectionType: 0
-  effects: []
+  effects:
+  - {fileID: 11400000, guid: ecb5d716f7a653e4ab7a2dc75337e173, type: 2}
