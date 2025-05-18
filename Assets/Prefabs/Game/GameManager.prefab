@@ -44,14 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e282cda18f777134b909d091a0a5fc04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerMaxHp: 0
-  playerHp: 0
+  dayTimeList: 000000000000000001000000020000000200000003000000
   currentState: 0
   currentLevel: 1
-  dayTimeList: 000000000000000001000000020000000200000003000000
   currentDayTimeInd: 0
   zombieSpawnInfos: []
   zombiesAggressionPoints: 0
-  playerAggressionPoints: 0
-  testZombie: {fileID: 0}
-  testCard: {fileID: 0}
+  zombieTurnDelay: 2

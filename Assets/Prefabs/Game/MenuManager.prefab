@@ -45,3 +45,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playOpportunitiesParent: {fileID: 0}
+  playerHp: {fileID: 0}
+  playCardButton: {fileID: 0}
+  cancelButton: {fileID: 0}
+  restButton: {fileID: 0}
+  endTurnButton: {fileID: 0}
+  morningEveningOverlay: {fileID: 0}
+  nightOverlay: {fileID: 0}
+  newTurnTextPrefab: {fileID: 2034236389844805901, guid: 3a7a9a0ef8285a34298f3aa03d6b9c22, type: 3}
+  playerTurnSprite: {fileID: 21300000, guid: ca33ad9dc84db7942a67d543502aef9f, type: 3}
+  zombieTurnSprite: {fileID: 21300000, guid: f02860640152e03438088c9b4d920bf2, type: 3}

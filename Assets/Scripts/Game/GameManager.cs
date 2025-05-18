@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public int currentDayTimeInd = 0;
     public List<BaseZombieSpawnInfo> zombieSpawnInfos;
     public int zombiesAggressionPoints = 0;
+    public float zombieTurnDelay = 1;
 
     public static GameManager I;
 
@@ -40,25 +41,20 @@ public class GameManager : MonoBehaviour
 
     void ChangeStateInternal(GameState newState) {
         currentState = newState;
-        switch (currentState)
-        {
+        switch (currentState) {
             case GameState.PrepareGame:
                 GridManager.I.GenerateGrid();
                 Player.I.playerHp = Player.I.playerMaxHp;
                 Player.I.SetDeckToBase();
-                // BaseZombie.SpawnZombie(testZombie, GridManager.I.GetTile(1, GridManager.I.gridHeight - 1));
                 ChangeState(GameState.PlayerTurn);
                 break;
             case GameState.PlayerTurn:
+                MenuManager.I.ShowNewTurnText(GameState.PlayerTurn);
                 Player.I.OnPlayerTurnStart();
                 break;
             case GameState.ZombieTurn:
-                AllZombiesProgress();
-                AllZombiesTakeTurn();
-                GridManager.I.SetZombieVisibility();
-                bool zombiesExists = GridManager.I.GetZombiesCount() > 0;
-                SpawnWaveZombies(zombiesExists);
-                ChangeState(GameState.ChangeTime);
+                MenuManager.I.ShowNewTurnText(GameState.ZombieTurn);
+                StartCoroutine(PerformZombieTurn());
                 break;
             case GameState.ChangeTime:
                 currentDayTimeInd = (currentDayTimeInd + 1) % dayTimeList.Count;
@@ -76,17 +72,29 @@ public class GameManager : MonoBehaviour
         StartCoroutine(ChangeStateCoroutine());
     }
 
+    IEnumerator PerformZombieTurn() {
+        AllZombiesProgress();
+        yield return new WaitForSeconds(zombieTurnDelay);
+        yield return AllZombiesTakeTurn();
+        GridManager.I.SetZombieVisibility();
+        bool zombiesExists = GridManager.I.GetZombiesCount() > 0;
+        SpawnWaveZombies(zombiesExists);
+        ChangeState(GameState.ChangeTime);
+    }
+
     public void AllZombiesProgress() {
         List<BaseZombie> zombies = GridManager.I.GetAllZombies();
         zombies.ForEach(z => z.Progress());
     }
 
-    public void AllZombiesTakeTurn() {
+    IEnumerator AllZombiesTakeTurn() {
         while (true) {
             List<BaseZombie> zombiesCanTakeTurn = GridManager.I.GetAllZombies().Where(z => z.CanTakeTurn()).ToList();
-            if (zombiesCanTakeTurn.Count == 0) return;
+            if (zombiesCanTakeTurn.Count == 0) yield break;
             zombiesCanTakeTurn.ForEach(z => z.TakeTurn());
+            yield return new WaitForSeconds(zombieTurnDelay / 2);
             Messenger.Broadcast(EventMessages.ON_ALL_ZOMBIE_TAKE_TURN);
+            yield return new WaitForSeconds(zombieTurnDelay / 2);
         }
     }
 

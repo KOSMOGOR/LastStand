@@ -155,7 +155,7 @@ MonoBehaviour:
   - {fileID: 1962840433704199240, guid: cae72cd24d608fd44a2d8c78a092bc8e, type: 3}
   xy: {x: 0, y: 0}
   zombieCountText: {fileID: 2337676952993663947}
-  zombieOffset: {x: 0, y: -0.2, z: -1}
+  zombieOffset: {x: 0, y: -2, z: -1}
   zombies: []
   obstacles: []
   isSelected: 0

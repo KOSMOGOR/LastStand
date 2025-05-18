@@ -16,13 +16,24 @@ public class MenuManager : MonoBehaviour
     public Button endTurnButton;
     public GameObject morningEveningOverlay;
     public GameObject nightOverlay;
+    public GameObject newTurnTextPrefab;
+    public Sprite playerTurnSprite;
+    public Sprite zombieTurnSprite;
+    public TMP_Text descriptionText;
+
+    GameObject newTurnText;
+
+    public static MenuManager I;
 
     void Awake() {
+        if (I != null) Destroy(gameObject);
+        I = this;
         playOpportunities = playOpportunitiesParent.GetComponentsInChildren<Transform>().Where(t => t != playOpportunitiesParent).Select(t => t.gameObject).ToList();
         playOpportunities.ForEach(po => po.SetActive(false));
         poActiveCount = 0;
         morningEveningOverlay.SetActive(false);
         nightOverlay.SetActive(false);
+        newTurnText = Instantiate(newTurnTextPrefab);
     }
 
     void Update() {
@@ -30,6 +41,7 @@ public class MenuManager : MonoBehaviour
         SetPlayerHp();
         SetButtonsAvailable();
         SetDayTimeOverlays();
+        SetCardDescription();
     }
 
     void SetPlayOpportunities() {
@@ -63,5 +75,20 @@ public class MenuManager : MonoBehaviour
             morningEveningOverlay.SetActive(false);
             nightOverlay.SetActive(false);
         }
+    }
+
+    public void ShowNewTurnText(GameState state) {
+        if (state == GameState.PlayerTurn) {
+            newTurnText.GetComponent<SpriteRenderer>().sprite = playerTurnSprite;
+            newTurnText.GetComponent<Animation>().Play();
+        } else if (state == GameState.ZombieTurn) {
+            newTurnText.GetComponent<SpriteRenderer>().sprite = zombieTurnSprite;
+            newTurnText.GetComponent<Animation>().Play();
+        }
+    }
+
+    void SetCardDescription() {
+        if (Player.I.chosenCard != null) descriptionText.text = Player.I.chosenCard.cardData.cardDescription;
+        else descriptionText.text = "";
     }
 }
