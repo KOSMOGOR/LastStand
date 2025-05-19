@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 027f9dc34f7cbe240b3bb282057733fe
+guid: 9d654e1a3f5571a458a91b32d077783f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4288371190831813150
-    second: SHOOT_0
+      213: 3156634924717718424
+    second: Stun_0
+  - first:
+      213: 2831363460287316188
+    second: Stun_1
+  - first:
+      213: -6614594754308018031
+    second: Stun_2
+  - first:
+      213: -5379046816916949201
+    second: Stun_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,177 +122,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SHOOT_0
+      name: Stun_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2ed63796f15ac74c0800000000000000
-      internalID: -4288371190831813150
+      spriteID: 89b346d4dbe9ecb20800000000000000
+      internalID: 3156634924717718424
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SHOOT_1
+      name: Stun_1
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 63a801a984926d34bb8cf644a3b74386
-      internalID: -1866676805
+      spriteID: cd04270e0160b4720800000000000000
+      internalID: 2831363460287316188
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SHOOT_2
+      name: Stun_2
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7c9072b47a9029546a5250813346da42
-      internalID: -345597039
+      spriteID: 190fe48dd1d3434a0800000000000000
+      internalID: -6614594754308018031
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SHOOT_3
+      name: Stun_3
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 350e4bf13cf75a44b98718f377f7c786
-      internalID: 1614058884
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SHOOT_4
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 97bb90b744cb22444980bdf5d6729807
-      internalID: 466801352
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SHOOT_5
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d252c4ef04bc7cb40a0dbfb07ce038e6
-      internalID: -669090410
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SHOOT_6
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 0
-        width: 32
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6d5f83700a485c14eabfb0b35004a43b
-      internalID: -910698963
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SHOOT_7
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 0
-        width: 32
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8537a20f4dd68e041be4ee13282d30d1
-      internalID: -1098025813
+      spriteID: f27387f5b69c955b0800000000000000
+      internalID: -5379046816916949201
       vertices: []
       indices: 
       edges: []
@@ -292,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 18062593d9bbfb64c8bfe1f4f66584ae
+    spriteID: b3f6074fd8c1ad74680573aae836f8b1
     internalID: 0
     vertices: []
     indices: 
@@ -302,14 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SHOOT_0: -4288371190831813150
-      SHOOT_1: -1866676805
-      SHOOT_2: -345597039
-      SHOOT_3: 1614058884
-      SHOOT_4: 466801352
-      SHOOT_5: -669090410
-      SHOOT_6: -910698963
-      SHOOT_7: -1098025813
+      Stun_0: 3156634924717718424
+      Stun_1: 2831363460287316188
+      Stun_2: -6614594754308018031
+      Stun_3: -5379046816916949201
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

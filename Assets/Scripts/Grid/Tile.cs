@@ -61,4 +61,10 @@ public class Tile : MonoBehaviour
         new List<BaseObstacle>(obstacles).ForEach(o => DestroyImmediate(o.gameObject));
         obstacles.Clear();
     }
+
+    public void UpdateZombieVisibility() {
+        if (zombies.Count == 0) return;
+        zombies[0].SetVisible(true);
+        zombies.Skip(1).ToList().ForEach(z => z.SetVisible(false));
+    }
 }

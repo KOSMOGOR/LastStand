@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67dc975e58d0afe4992b464c90349cf7, type: 3}
   m_Name: AdditionalAmmoDoubleDamage
   m_EditorClassIdentifier: 
-  multiplier: 2
+  multiplier: 1
   numberOfTimesToActivate: 1
+  additionalFlatDamage: 0
   damageType: 0

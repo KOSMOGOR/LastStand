@@ -1,31 +1,37 @@
 fileFormatVersion: 2
-guid: 054aa9a45b266c34880aff882b9a1d5a
+guid: 880c4f7aefb27714d99f32bc0f1e0bee
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4174866431905101710
-    second: Zombies_0
+      213: 5810753841229539730
+    second: CHICKENJOCKEY_SPAWN_0
   - first:
-      213: 5093695192268335082
-    second: Zombies_1
+      213: 3460488275214028558
+    second: CHICKENJOCKEY_SPAWN_1
   - first:
-      213: 3122859666585403997
-    second: Zombies_2
+      213: -3904875980963559482
+    second: CHICKENJOCKEY_SPAWN_2
   - first:
-      213: 75903289641227606
-    second: Zombies_3
+      213: -365836038267034675
+    second: CHICKENJOCKEY_SPAWN_3
   - first:
-      213: -5200325810816058633
-    second: Zombies_4
+      213: -9146716703414450480
+    second: CHICKENJOCKEY_SPAWN_4
   - first:
-      213: -4950645146611718910
-    second: Zombies_5
+      213: -3188743124812822438
+    second: CHICKENJOCKEY_SPAWN_5
   - first:
-      213: 1396295013652517339
-    second: Zombies_6
+      213: 290109448939312211
+    second: CHICKENJOCKEY_SPAWN_6
   - first:
-      213: 4297957616810252235
-    second: Zombies_7
+      213: -5645122955657730232
+    second: CHICKENJOCKEY_SPAWN_7
+  - first:
+      213: 8199751388751782814
+    second: CHICKENJOCKEY_SPAWN_8
+  - first:
+      213: -7727138667474323628
+    second: CHICKENJOCKEY_SPAWN_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -69,12 +75,12 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 2.5
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 0
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -95,7 +101,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 4
+    textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -134,13 +140,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Zombies_0
+      name: CHICKENJOCKEY_SPAWN_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 48
+        x: 6
+        y: 17
+        width: 20
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,20 +155,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e87f76286ea10f930800000000000000
-      internalID: 4174866431905101710
+      spriteID: 29929b7f4d1f3a050800000000000000
+      internalID: 5810753841229539730
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombies_1
+      name: CHICKENJOCKEY_SPAWN_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 48
+        x: 38
+        y: 16
+        width: 20
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +177,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ae7e4413ac070b640800000000000000
-      internalID: 5093695192268335082
+      spriteID: e0f498970cf160030800000000000000
+      internalID: 3460488275214028558
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombies_2
+      name: CHICKENJOCKEY_SPAWN_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 48
+        x: 70
+        y: 16
+        width: 20
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,20 +199,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d52c7363250a65b20800000000000000
-      internalID: 3122859666585403997
+      spriteID: 6c746b6fbf71fc9c0800000000000000
+      internalID: -3904875980963559482
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombies_3
+      name: CHICKENJOCKEY_SPAWN_3
       rect:
         serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 48
+        x: 101
+        y: 12
+        width: 22
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6555958c3a9ad0100800000000000000
-      internalID: 75903289641227606
+      spriteID: dc3ae0dbf0a4ceaf0800000000000000
+      internalID: -365836038267034675
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombies_4
+      name: CHICKENJOCKEY_SPAWN_4
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 48
+        x: 133
+        y: 9
+        width: 22
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,20 +243,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7fa73024a3bb4d7b0800000000000000
-      internalID: -5200325810816058633
+      spriteID: 0d689df9e95501180800000000000000
+      internalID: -9146716703414450480
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombies_5
+      name: CHICKENJOCKEY_SPAWN_5
       rect:
         serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 48
+        x: 166
+        y: 8
+        width: 20
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,20 +265,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 20562330876cb4bb0800000000000000
-      internalID: -4950645146611718910
+      spriteID: a58009dc50f4fb3d0800000000000000
+      internalID: -3188743124812822438
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombies_6
+      name: CHICKENJOCKEY_SPAWN_6
       rect:
         serializedVersion: 2
-        x: 192
-        y: 0
-        width: 32
-        height: 48
+        x: 198
+        y: 9
+        width: 20
+        height: 29
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,20 +287,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bd15862cae2a06310800000000000000
-      internalID: 1396295013652517339
+      spriteID: 354130ab10da60400800000000000000
+      internalID: 290109448939312211
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombies_7
+      name: CHICKENJOCKEY_SPAWN_7
       rect:
         serializedVersion: 2
-        x: 224
-        y: 0
-        width: 32
-        height: 48
+        x: 229
+        y: 6
+        width: 22
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -303,30 +309,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bc7d8a15ea965ab30800000000000000
-      internalID: 4297957616810252235
+      spriteID: 8472e9ab49e78a1b0800000000000000
+      internalID: -5645122955657730232
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombies_8
+      name: CHICKENJOCKEY_SPAWN_8
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 32
-        height: 48
+        x: 261
+        y: 4
+        width: 22
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 6985a5b7c23508443839d22c2218c837
-      internalID: -197874345
+      spriteID: e93e015a17e5bc170800000000000000
+      internalID: 8199751388751782814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHICKENJOCKEY_SPAWN_9
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 3
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 457f1037250b3c490800000000000000
+      internalID: -7727138667474323628
       vertices: []
       indices: 
       edges: []
@@ -335,7 +363,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 2c812e8b15c5e3b45933de7f5c1acf5f
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -345,15 +373,16 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Zombies_0: 4174866431905101710
-      Zombies_1: 5093695192268335082
-      Zombies_2: 3122859666585403997
-      Zombies_3: 75903289641227606
-      Zombies_4: -5200325810816058633
-      Zombies_5: -4950645146611718910
-      Zombies_6: 1396295013652517339
-      Zombies_7: 4297957616810252235
-      Zombies_8: -197874345
+      CHICKENJOCKEY_SPAWN_0: 5810753841229539730
+      CHICKENJOCKEY_SPAWN_1: 3460488275214028558
+      CHICKENJOCKEY_SPAWN_2: -3904875980963559482
+      CHICKENJOCKEY_SPAWN_3: -365836038267034675
+      CHICKENJOCKEY_SPAWN_4: -9146716703414450480
+      CHICKENJOCKEY_SPAWN_5: -3188743124812822438
+      CHICKENJOCKEY_SPAWN_6: 290109448939312211
+      CHICKENJOCKEY_SPAWN_7: -5645122955657730232
+      CHICKENJOCKEY_SPAWN_8: 8199751388751782814
+      CHICKENJOCKEY_SPAWN_9: -7727138667474323628
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

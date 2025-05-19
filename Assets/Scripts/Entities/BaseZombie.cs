@@ -13,15 +13,24 @@ public class BaseZombie : BaseTileEntity
     public float progressionThreshold = 1;
     [TextArea] public string descrription;
     public string spritePrefix = "ZOMBIE";
+    public GameObject stunPrefab;
 
     public bool stunned = false;
 
     SpriteRenderer sprite;
     Animator animator;
+    GameObject stunObject;
 
     void Awake() {
         sprite = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        // stunObject = Instantiate(stunPrefab, transform.position, transform.rotation, transform);
+        stunObject = Instantiate(stunPrefab, transform);
+        stunObject.SetActive(false);
+    }
+
+    void Update() {
+        if (stunObject.activeSelf != stunned) stunObject.SetActive(stunned);
     }
 
     void LateUpdate() {
@@ -35,11 +44,15 @@ public class BaseZombie : BaseTileEntity
     }
 
     public override void SetTile(Tile newTile) {
-        if (tile != null) tile.zombies.Remove(this);
+        if (tile != null) {
+            tile.zombies.Remove(this);
+            tile.UpdateZombieVisibility();
+        }
         bool doTween = tile != null;
         tile = newTile;
         if (tile != null) {
             tile.zombies.Add(this);
+            tile.UpdateZombieVisibility();
             if (doTween) {
                 transform.DOMove(tile.transform.position + tile.zombieOffset, 1);
                 animator.SetTrigger("move");
@@ -76,8 +89,8 @@ public class BaseZombie : BaseTileEntity
             Player.I.TakeDamage(currentDamage);
         } else if (obstacle != null) {
             animator.SetTrigger("attack");
-            obstacle.TakeDamage(currentDamage, DamageType.Zombie);
             Messenger<BaseZombie, int, BaseObstacle>.Broadcast(EventMessages.ON_ZOMBIE_DEAL_DAMAGE_TO_OBSTACLE, this, currentDamage, obstacle);
+            obstacle.TakeDamage(currentDamage, DamageType.Zombie);
         }
         else TryMove(newTile);
     }

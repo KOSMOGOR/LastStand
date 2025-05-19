@@ -52,12 +52,12 @@ public class Player : MonoBehaviour
 
     public void ChooseCard(Card card) {
         GridManager.I.SetCurrentGridSelectionType(GridSelectionType.None);
-        SetCardSelectorCard(card);
         if (chosenCard != null) {
             chosenCard.SetChosenStatus(false);
             chosenCard = null;
         }
         if (GameManager.I.currentState != GameState.PlayerTurn) return;
+        SetCardSelectorCard(card);
         if (card != null && card.IsInHand()) {
             chosenCard = card;
             chosenCard.SetChosenStatus(true);

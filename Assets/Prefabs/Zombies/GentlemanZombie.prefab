@@ -110,6 +110,7 @@ MonoBehaviour:
   progressionThreshold: 1
   descrription: 
   spritePrefix: GENTLEMAN
+  stunPrefab: {fileID: 8304985053189587063, guid: e5d67339da55f9c419ba1136fe46f740, type: 3}
   stunned: 0
 --- !u!95 &-628055569259124051
 Animator:

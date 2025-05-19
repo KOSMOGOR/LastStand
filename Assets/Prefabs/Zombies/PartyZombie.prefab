@@ -83,7 +83,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.2, y: 1.5}
+  m_Size: {x: 0.22, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -110,8 +110,9 @@ MonoBehaviour:
   progressionThreshold: 1
   descrription: 
   spritePrefix: PARTY
+  stunPrefab: {fileID: 8304985053189587063, guid: e5d67339da55f9c419ba1136fe46f740, type: 3}
   stunned: 0
-  obstacleSpawnOnDeathPrefab: {fileID: 0}
+  obstacleSpawnOnDeathPrefab: {fileID: 5451685389975948647, guid: 4b33a9857780e27458f6673e0fae9b93, type: 3}
 --- !u!95 &3147038914778836464
 Animator:
   serializedVersion: 7

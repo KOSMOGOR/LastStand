@@ -1,0 +1,676 @@
+fileFormatVersion: 2
+guid: 7a077b510bd0b3342a86f50fa103be69
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3834444674956735812
+    second: CHICKENJOCKEY_MOVE_0
+  - first:
+      213: 8542308467486615395
+    second: CHICKENJOCKEY_MOVE_1
+  - first:
+      213: -8203087998808532602
+    second: CHICKENJOCKEY_MOVE_2
+  - first:
+      213: -5526374025676369318
+    second: CHICKENJOCKEY_MOVE_3
+  - first:
+      213: -2737625745567640976
+    second: CHICKENJOCKEY_MOVE_4
+  - first:
+      213: 6466086469224959572
+    second: CHICKENJOCKEY_MOVE_5
+  - first:
+      213: 6235735757402136574
+    second: CHICKENJOCKEY_MOVE_6
+  - first:
+      213: -821171231551351699
+    second: CHICKENJOCKEY_MOVE_7
+  - first:
+      213: -5766441577094429361
+    second: CHICKENJOCKEY_MOVE_8
+  - first:
+      213: 2854686206852046515
+    second: CHICKENJOCKEY_MOVE_9
+  - first:
+      213: 7863177970832171734
+    second: CHICKENJOCKEY_MOVE_10
+  - first:
+      213: -2699796744581313115
+    second: CHICKENJOCKEY_MOVE_11
+  - first:
+      213: 8088222658468640878
+    second: CHICKENJOCKEY_MOVE_12
+  - first:
+      213: -391700507198102946
+    second: CHICKENJOCKEY_MOVE_13
+  - first:
+      213: 1261989944693026713
+    second: CHICKENJOCKEY_MOVE_14
+  - first:
+      213: -7843691119238574582
+    second: CHICKENJOCKEY_MOVE_15
+  - first:
+      213: 9040501105893760563
+    second: CHICKENJOCKEY_MOVE_16
+  - first:
+      213: -5629297808822300760
+    second: CHICKENJOCKEY_MOVE_17
+  - first:
+      213: 9109470274186538193
+    second: CHICKENJOCKEY_MOVE_18
+  - first:
+      213: -8893534842495706595
+    second: CHICKENJOCKEY_MOVE_19
+  - first:
+      213: -5311616705693331053
+    second: CHICKENJOCKEY_MOVE_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 2.5
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CHICKENJOCKEY_MOVE_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 3
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4453fa9bd1fa63530800000000000000
+      internalID: 3834444674956735812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHICKENJOCKEY_MOVE_1
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 3
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 367e956ca406c8670800000000000000
+      internalID: 8542308467486615395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHICKENJOCKEY_MOVE_2
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 3
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6895fb94de6c82e80800000000000000
+      internalID: -8203087998808532602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHICKENJOCKEY_MOVE_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 3
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a525d978a106e43b0800000000000000
+      internalID: -5526374025676369318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHICKENJOCKEY_MOVE_4
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 3
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0721a7393eff10ad0800000000000000
+      internalID: -2737625745567640976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHICKENJOCKEY_MOVE_5
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 3
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45e0d1d82672cb950800000000000000
+      internalID: 6466086469224959572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHICKENJOCKEY_MOVE_6
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 3
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: effd72d02a8c98650800000000000000
+      internalID: 6235735757402136574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHICKENJOCKEY_MOVE_7
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 3
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d649c9b9d1d9a94f0800000000000000
+      internalID: -821171231551351699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHICKENJOCKEY_MOVE_8
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 3
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f454e3300fb79ffa0800000000000000
+      internalID: -5766441577094429361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHICKENJOCKEY_MOVE_9
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 3
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3be9f98faf1ed9720800000000000000
+      internalID: 2854686206852046515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHICKENJOCKEY_MOVE_10
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 3
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d2e02d14be9f1d60800000000000000
+      internalID: 7863177970832171734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHICKENJOCKEY_MOVE_11
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 3
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ad89793a25688ad0800000000000000
+      internalID: -2699796744581313115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHICKENJOCKEY_MOVE_12
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 3
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e68f94697a32f3070800000000000000
+      internalID: 8088222658468640878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHICKENJOCKEY_MOVE_13
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 3
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e52ed1ac676609af0800000000000000
+      internalID: -391700507198102946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHICKENJOCKEY_MOVE_14
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 1
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99fea8b1b2d738110800000000000000
+      internalID: 1261989944693026713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHICKENJOCKEY_MOVE_15
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 0
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0e06e51c7c952390800000000000000
+      internalID: -7843691119238574582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHICKENJOCKEY_MOVE_16
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 0
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33ed2507bdf467d70800000000000000
+      internalID: 9040501105893760563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHICKENJOCKEY_MOVE_17
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 0
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8af034ad777b0e1b0800000000000000
+      internalID: -5629297808822300760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHICKENJOCKEY_MOVE_18
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 0
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dc6ed843f65b6e70800000000000000
+      internalID: 9109470274186538193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHICKENJOCKEY_MOVE_19
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 1
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1adb734e21d39480800000000000000
+      internalID: -8893534842495706595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHICKENJOCKEY_MOVE_20
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 3
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3915e129fb85946b0800000000000000
+      internalID: -5311616705693331053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      CHICKENJOCKEY_MOVE_0: 3834444674956735812
+      CHICKENJOCKEY_MOVE_1: 8542308467486615395
+      CHICKENJOCKEY_MOVE_10: 7863177970832171734
+      CHICKENJOCKEY_MOVE_11: -2699796744581313115
+      CHICKENJOCKEY_MOVE_12: 8088222658468640878
+      CHICKENJOCKEY_MOVE_13: -391700507198102946
+      CHICKENJOCKEY_MOVE_14: 1261989944693026713
+      CHICKENJOCKEY_MOVE_15: -7843691119238574582
+      CHICKENJOCKEY_MOVE_16: 9040501105893760563
+      CHICKENJOCKEY_MOVE_17: -5629297808822300760
+      CHICKENJOCKEY_MOVE_18: 9109470274186538193
+      CHICKENJOCKEY_MOVE_19: -8893534842495706595
+      CHICKENJOCKEY_MOVE_2: -8203087998808532602
+      CHICKENJOCKEY_MOVE_20: -5311616705693331053
+      CHICKENJOCKEY_MOVE_3: -5526374025676369318
+      CHICKENJOCKEY_MOVE_4: -2737625745567640976
+      CHICKENJOCKEY_MOVE_5: 6466086469224959572
+      CHICKENJOCKEY_MOVE_6: 6235735757402136574
+      CHICKENJOCKEY_MOVE_7: -821171231551351699
+      CHICKENJOCKEY_MOVE_8: -5766441577094429361
+      CHICKENJOCKEY_MOVE_9: 2854686206852046515
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

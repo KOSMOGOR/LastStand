@@ -1,19 +1,13 @@
 fileFormatVersion: 2
-guid: 9d654e1a3f5571a458a91b32d077783f
+guid: b1e2d991e28021f4f8f255b48729d372
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3156634924717718424
-    second: Stun_0
+      213: -3763690366372596679
+    second: PARTY_MOVE_0
   - first:
-      213: 2831363460287316188
-    second: Stun_1
-  - first:
-      213: -6614594754308018031
-    second: Stun_2
-  - first:
-      213: -5379046816916949201
-    second: Stun_3
+      213: 3002222956874943159
+    second: PARTY_MOVE_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -60,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 2.5
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -83,7 +77,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -122,89 +116,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Stun_0
+      name: PARTY_IDLE_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 23
-        width: 20
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 32
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 89b346d4dbe9ecb20800000000000000
-      internalID: 3156634924717718424
+      spriteID: cdead556653a8cb4ca79777026dcf0ad
+      internalID: -47336860
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Stun_1
+      name: PARTY_IDLE_1
       rect:
         serializedVersion: 2
-        x: 36
-        y: 24
-        width: 24
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 32
+        y: 0
+        width: 32
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: cd04270e0160b4720800000000000000
-      internalID: 2831363460287316188
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Stun_2
-      rect:
-        serializedVersion: 2
-        x: 70
-        y: 23
-        width: 20
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 190fe48dd1d3434a0800000000000000
-      internalID: -6614594754308018031
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Stun_3
-      rect:
-        serializedVersion: 2
-        x: 100
-        y: 24
-        width: 24
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f27387f5b69c955b0800000000000000
-      internalID: -5379046816916949201
+      spriteID: a88340b78f5471f4eafb554f217747ed
+      internalID: 2120737662
       vertices: []
       indices: 
       edges: []
@@ -213,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 6b9ef189c19e4cb4ca2b591de5b1224b
     internalID: 0
     vertices: []
     indices: 
@@ -223,10 +173,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Stun_0: 3156634924717718424
-      Stun_1: 2831363460287316188
-      Stun_2: -6614594754308018031
-      Stun_3: -5379046816916949201
+      PARTY_IDLE_0: -47336860
+      PARTY_IDLE_1: 2120737662
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
