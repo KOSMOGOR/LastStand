@@ -49,6 +49,7 @@ MonoBehaviour:
   topDiscardTransform: {fileID: 0}
   cardPrefab: {fileID: 97067139330353971, guid: fff54a0f6efa27b4aad12376560196f8, type: 3}
   startDeck: {fileID: 11400000, guid: ae294ac83042dc54d93dc5336ba2f9f5, type: 2}
+  cardSelectorPrefab: {fileID: 3997923493792042184, guid: afe01fe9ceba2374285d934173087bb4, type: 3}
   playerHp: 0
   handTransforms: []
   hand: []
@@ -61,3 +62,4 @@ MonoBehaviour:
   digitalCurrency: 0
   playOpportunities: 0
   cardsPlayedThisTurn: []
+  canRest: 0

@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     public Transform topDiscardTransform;
     public Card cardPrefab;
     public CardDeck startDeck;
+    public GameObject cardSelectorPrefab;
 
     [Header("Internal")]
     public int playerHp;
@@ -30,12 +31,15 @@ public class Player : MonoBehaviour
 
     public static Player I;
     Transform cardParentTransform;
+    GameObject cardSelector;
 
     void Awake() {
         if (I != null) Destroy(gameObject);
         I = this;
         allCardDatas = Resources.LoadAll<CardData>("CardDatas").ToList().ToDictionary(c => c.cardName, elementSelector: c => c);
         cardParentTransform = new GameObject("Cards").transform;
+        cardSelector = Instantiate(cardSelectorPrefab);
+        SetCardSelectorCard(null);
     }
 
     public void SetDeckToBase() {
@@ -47,13 +51,14 @@ public class Player : MonoBehaviour
     }
 
     public void ChooseCard(Card card) {
-        if (GameManager.I.currentState != GameState.PlayerTurn) return;
         GridManager.I.SetCurrentGridSelectionType(GridSelectionType.None);
+        SetCardSelectorCard(card);
         if (chosenCard != null) {
             chosenCard.SetChosenStatus(false);
             chosenCard = null;
         }
-        if (card && card.IsInHand()) {
+        if (GameManager.I.currentState != GameState.PlayerTurn) return;
+        if (card != null && card.IsInHand()) {
             chosenCard = card;
             chosenCard.SetChosenStatus(true);
             GridManager.I.SetCurrentGridSelectionType(chosenCard.cardData.gridSelectionType);
@@ -62,6 +67,14 @@ public class Player : MonoBehaviour
 
     public void ChooseNullCard() {
         ChooseCard(null);
+    }
+
+    void SetCardSelectorCard(Card card) {
+        if (card == null) cardSelector.SetActive(false);
+        else {
+            cardSelector.SetActive(true);
+            cardSelector.transform.SetPositionAndRotation(card.transform.position, card.transform.rotation);
+        }
     }
 
     public bool CanPlayChosenCard() {
