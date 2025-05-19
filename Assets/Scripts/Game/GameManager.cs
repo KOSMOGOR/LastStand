@@ -108,7 +108,7 @@ public class GameManager : MonoBehaviour
     }
 
     public BaseZombieSpawnInfo SelectZombieToSpawn(int aggressionPoints) {
-        List<BaseZombieSpawnInfo> canSpawnZombies = zombieSpawnInfos.Where(z => z.aggressionCost <= aggressionPoints && z.CanSpawn()).OrderBy(_ => Random.value).ToList();
+        List<BaseZombieSpawnInfo> canSpawnZombies = zombieSpawnInfos.Where(z => z.prefab.aggressionCost <= aggressionPoints && z.CanSpawn()).OrderBy(_ => Random.value).ToList();
         if (canSpawnZombies.Count > 0) return canSpawnZombies.First();
         return null;
     }
@@ -141,7 +141,7 @@ public class GameManager : MonoBehaviour
         for (int i = 0; i < numZombiesToSpawn; ++i) {
             BaseZombieSpawnInfo zombieSpawnInfo = SelectZombieToSpawn(zombiesAggressionPoints);
             if (zombieSpawnInfo == null) break;
-            if (Random.value > Math.Min(currentLevel, 80) * chanceNotToWaistPoints) zombiesAggressionPoints -= zombieSpawnInfo.aggressionCost;
+            if (Random.value > Math.Min(currentLevel, 80) * chanceNotToWaistPoints) zombiesAggressionPoints -= zombieSpawnInfo.prefab.aggressionCost;
             Tile tileToSpawn = GridManager.I.GetTileToSpawnZombie();
             BaseZombie.SpawnZombie(zombieSpawnInfo.prefab, tileToSpawn);
         }

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using DG.Tweening;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class BaseZombie : BaseTileEntity
 {
@@ -11,9 +12,10 @@ public class BaseZombie : BaseTileEntity
     public int damage;
     [SerializeField] float progression = 0;
     public float progressionThreshold = 1;
-    [TextArea] public string descrription;
+    [TextArea] public string description;
     public string spritePrefix = "ZOMBIE";
     public GameObject stunPrefab;
+    public int aggressionCost;
 
     public bool stunned = false;
 
@@ -113,6 +115,7 @@ public class BaseZombie : BaseTileEntity
 
     public override void Die() {
         Messenger<BaseZombie>.Broadcast(EventMessages.ON_ZOMBIE_DIE, this);
+        Player.I.digitalCurrency += Random.Range(1, aggressionCost + 1);
         SetTile(null);
         animator.SetTrigger("death");
         IEnumerator DestroyThis() {

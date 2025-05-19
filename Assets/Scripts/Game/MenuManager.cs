@@ -20,6 +20,7 @@ public class MenuManager : MonoBehaviour
     public Sprite playerTurnSprite;
     public Sprite zombieTurnSprite;
     public TMP_Text descriptionText;
+    public TMP_Text digitalCurrencyText;
 
     GameObject newTurnText;
 
@@ -42,6 +43,7 @@ public class MenuManager : MonoBehaviour
         SetButtonsAvailable();
         SetDayTimeOverlays();
         SetCardDescription();
+        SetDCText();
     }
 
     void SetPlayOpportunities() {
@@ -92,5 +94,9 @@ public class MenuManager : MonoBehaviour
     void SetCardDescription() {
         if (Player.I.chosenCard != null) descriptionText.text = Player.I.chosenCard.cardData.cardDescription;
         else descriptionText.text = "";
+    }
+
+    void SetDCText() {
+        digitalCurrencyText.text = $"x{Player.I.digitalCurrency}";
     }
 }

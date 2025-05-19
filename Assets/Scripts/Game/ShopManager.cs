@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,6 +13,7 @@ public class ShopManager : MonoBehaviour
     public Button exitButton;
     public Button buyButton;
     public GameObject shopCardSelectorPrefab;
+    public TMP_Text digitalCurrencyText;
 
     [Header("Internal")]
     public int shopSize;
@@ -33,6 +35,7 @@ public class ShopManager : MonoBehaviour
     void Update() {
         SetExitButtonActive();
         SetBuyButtonActive();
+        SetDCText();
     }
 
     public void InitializeShop() {
@@ -109,5 +112,9 @@ public class ShopManager : MonoBehaviour
             shopCardSelector.SetActive(true);
             shopCardSelector.transform.SetPositionAndRotation(shopCard.transform.position, shopCard.transform.rotation);
         }
+    }
+
+    void SetDCText() {
+        digitalCurrencyText.text = $"x{Player.I.digitalCurrency}";
     }
 }
