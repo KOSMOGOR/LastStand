@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: f1403266987eeac47a58990d8b495ea9
+guid: b4a7c63366fb8b546bfc63fbe84becbe
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1909051145499057002
-    second: OBSTACLES_0
-  - first:
-      213: -5388431690506377298
-    second: OBSTACLES_1
+      213: -8042152364257800344
+    second: 14_SNIPER_RIFLE_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -49,12 +46,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 2.5
+  spritePixelsToUnits: 160
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -116,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: OBSTACLES_0
+      name: 14_SNIPER_RIFLE_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 96
-        width: 48
-        height: 32
+        y: 0
+        width: 1408
+        height: 2176
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,74 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a6b1689f6ef4e7a10800000000000000
-      internalID: 1909051145499057002
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OBSTACLES_1
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 96
-        width: 48
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ea7e8e63de17835b0800000000000000
-      internalID: -5388431690506377298
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OBSTACLES_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 48
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3ebe9bb6a2ed51741ad5916767ee235d
-      internalID: -251987394
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OBSTACLES_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 64
-        width: 48
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d1931a8bb03f79944beb6e562e35c31e
-      internalID: -1101013244
+      spriteID: 86f88daa809846090800000000000000
+      internalID: -8042152364257800344
       vertices: []
       indices: 
       edges: []
@@ -207,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5fb52ddf87166c04490b87538b7d7ed0
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -217,10 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      OBSTACLES_0: 1909051145499057002
-      OBSTACLES_1: -5388431690506377298
-      OBSTACLES_2: -251987394
-      OBSTACLES_3: -1101013244
+      14_SNIPER_RIFLE_0: -8042152364257800344
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

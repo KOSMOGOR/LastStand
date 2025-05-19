@@ -113,8 +113,6 @@ public class Player : MonoBehaviour
     }
 
     public void MoveCardFromHandToDiscard(Card card) {
-        print(card);
-        print(card.handInd);
         int handInd = card.handInd;
         card.SetHandInd(-1);
         card.SetShown(true);

@@ -73,7 +73,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -87,7 +87,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 2.5
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -152,10 +152,10 @@ TextureImporter:
       name: EXPLOSION_0
       rect:
         serializedVersion: 2
-        x: 18
-        y: 11
-        width: 12
-        height: 10
+        x: 0
+        y: 0
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,10 +174,10 @@ TextureImporter:
       name: EXPLOSION_1
       rect:
         serializedVersion: 2
-        x: 65
-        y: 10
-        width: 14
-        height: 12
+        x: 48
+        y: 0
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,10 +196,10 @@ TextureImporter:
       name: EXPLOSION_2
       rect:
         serializedVersion: 2
-        x: 109
-        y: 10
-        width: 22
-        height: 13
+        x: 96
+        y: 0
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,10 +218,10 @@ TextureImporter:
       name: EXPLOSION_3
       rect:
         serializedVersion: 2
-        x: 154
-        y: 9
-        width: 28
-        height: 16
+        x: 144
+        y: 0
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,10 +240,10 @@ TextureImporter:
       name: EXPLOSION_4
       rect:
         serializedVersion: 2
-        x: 198
-        y: 8
-        width: 36
-        height: 18
+        x: 192
+        y: 0
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -262,10 +262,10 @@ TextureImporter:
       name: EXPLOSION_5
       rect:
         serializedVersion: 2
-        x: 246
-        y: 4
-        width: 36
-        height: 24
+        x: 240
+        y: 0
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -284,10 +284,10 @@ TextureImporter:
       name: EXPLOSION_6
       rect:
         serializedVersion: 2
-        x: 294
-        y: 3
-        width: 36
-        height: 26
+        x: 288
+        y: 0
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -306,10 +306,10 @@ TextureImporter:
       name: EXPLOSION_7
       rect:
         serializedVersion: 2
-        x: 342
-        y: 3
-        width: 36
-        height: 26
+        x: 336
+        y: 0
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -328,10 +328,10 @@ TextureImporter:
       name: EXPLOSION_8
       rect:
         serializedVersion: 2
-        x: 390
-        y: 3
-        width: 36
-        height: 26
+        x: 384
+        y: 0
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -350,10 +350,10 @@ TextureImporter:
       name: EXPLOSION_9
       rect:
         serializedVersion: 2
-        x: 438
-        y: 16
-        width: 36
-        height: 13
+        x: 432
+        y: 0
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -372,10 +372,10 @@ TextureImporter:
       name: EXPLOSION_10
       rect:
         serializedVersion: 2
-        x: 493
-        y: 19
-        width: 22
-        height: 10
+        x: 480
+        y: 0
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -390,55 +390,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: EXPLOSION_11
-      rect:
-        serializedVersion: 2
-        x: 438
-        y: 3
-        width: 36
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 978fa1e515686c4a0800000000000000
-      internalID: -6573418922071361415
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: EXPLOSION_12
-      rect:
-        serializedVersion: 2
-        x: 493
-        y: 3
-        width: 22
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: db4e69e1241e5d610800000000000000
-      internalID: 1645468912971080893
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 00533bd1635fbaa4caa629c73742b5f4
     internalID: 0
     vertices: []
     indices: 
@@ -451,8 +407,6 @@ TextureImporter:
       EXPLOSION_0: -6179551331178719187
       EXPLOSION_1: -1475278220248146276
       EXPLOSION_10: -5277419220836233424
-      EXPLOSION_11: -6573418922071361415
-      EXPLOSION_12: 1645468912971080893
       EXPLOSION_2: 8725592175392420673
       EXPLOSION_3: 5503232645462916612
       EXPLOSION_4: -4995367633711683906

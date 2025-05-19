@@ -13,4 +13,6 @@ MonoBehaviour:
   m_Name: ShotgunShootingDamageEffect
   m_EditorClassIdentifier: 
   damage: 3
+  shootingEffectPrefab: {fileID: 7246005035784981497, guid: 73b1aeaa79979a140a9b573e245538ae, type: 3}
+  secondsToDisplay: 0.8
   damageAdjacent: 1
