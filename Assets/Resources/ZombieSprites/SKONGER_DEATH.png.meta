@@ -129,11 +129,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 4
-        width: 65
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 0
+        width: 32
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -150,12 +150,12 @@ TextureImporter:
       name: SKONGER_DEATH_1
       rect:
         serializedVersion: 2
-        x: 64
-        y: 5
+        x: 32
+        y: 0
         width: 32
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -172,12 +172,12 @@ TextureImporter:
       name: SKONGER_DEATH_2
       rect:
         serializedVersion: 2
-        x: 96
-        y: 6
+        x: 64
+        y: 0
         width: 32
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -194,12 +194,12 @@ TextureImporter:
       name: SKONGER_DEATH_3
       rect:
         serializedVersion: 2
-        x: 132
-        y: 7
-        width: 24
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 96
+        y: 0
+        width: 32
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -216,12 +216,12 @@ TextureImporter:
       name: SKONGER_DEATH_4
       rect:
         serializedVersion: 2
-        x: 165
-        y: 10
-        width: 22
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 128
+        y: 0
+        width: 32
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -234,11 +234,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: SKONGER_DEATH_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8027b0e764bf304abf4fa44b6a827af
+      internalID: -2064870384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d9eabb26afa84084da613386479262b4
     internalID: 0
     vertices: []
     indices: 
@@ -253,6 +275,7 @@ TextureImporter:
       SKONGER_DEATH_2: 4500906657293490232
       SKONGER_DEATH_3: -8331943246325502826
       SKONGER_DEATH_4: 5632410196486954144
+      SKONGER_DEATH_5: -2064870384
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
