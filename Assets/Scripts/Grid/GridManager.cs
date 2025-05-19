@@ -30,7 +30,7 @@ public class GridManager : MonoBehaviour
 
     void Awake() {
         if (I != null) Destroy(gameObject);
-        I = this;
+        else I = this;
         GameObject tileSelectionParent = new("TileSelection");
         tileSelectionSingle = Instantiate(tileSelectionSinglePrefab, tileSelectionParent.transform);
         tileSelectionMultiple = Enumerable.Repeat<GameObject>(null, gridWidth + gridHeight).Select(_ => Instantiate(tileSelectionMultiplePrefab, tileSelectionParent.transform)).ToList();
@@ -46,8 +46,9 @@ public class GridManager : MonoBehaviour
 
     [ContextMenu("RemoveGrid")]
     public void RemoveGrid() {
-        foreach (var i in GetComponentsInChildren<Tile>()) {
-            DestroyImmediate(i.gameObject);
+        foreach (Tile tile in GetComponentsInChildren<Tile>()) {
+            tile.Clear();
+            DestroyImmediate(tile.gameObject);
         }
         tiles = new();
     }

@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
     public Card topDiscardCard;
     public Card chosenCard;
     public int maxHandSize;
-    public int digitalCurrency = 0;
+    public int digitalCurrency = 50;
     public int playOpportunities = 0;
     public List<Card> cardsPlayedThisTurn = new();
     public bool canRest = false;
@@ -35,7 +35,7 @@ public class Player : MonoBehaviour
 
     void Awake() {
         if (I != null) Destroy(gameObject);
-        I = this;
+        else I = this;
         allCardDatas = Resources.LoadAll<CardData>("CardDatas").ToList().ToDictionary(c => c.cardName, elementSelector: c => c);
         cardParentTransform = new GameObject("Cards").transform;
         cardSelector = Instantiate(cardSelectorPrefab);
@@ -95,9 +95,8 @@ public class Player : MonoBehaviour
     }
 
     public Card InitializeCard(CardData cardData) {
-        Card card = Instantiate(cardPrefab);
+        Card card = Instantiate(cardPrefab, cardParentTransform);
         card.SetCardData(cardData);
-        card.transform.SetParent(cardParentTransform);
         return card;
     }
 
@@ -188,11 +187,17 @@ public class Player : MonoBehaviour
         if (discardHand) DiscardHand();
         playOpportunities = 0;
         Messenger.Broadcast(EventMessages.ON_PLAYER_END_TURN);
-        GameManager.I.ChangeState(GameState.ZombieTurn);
+        ChangeStateToNew();
+    }
+
+    void ChangeStateToNew() {
+        GameState newState = GameState.ZombieTurn;
+        if (GameManager.I.zombiesAggressionPoints == 0 && GridManager.I.GetZombiesCount() == 0) newState = GameState.Shopping;
+        GameManager.I.ChangeState(newState);
     }
 
     public void MakeRest() {
-        if (!canRest || GameManager.I.currentState != GameState.PlayerTurn) return;
+        if (GameManager.I.currentState != GameState.PlayerTurn) return;
         ShuffleDiscardToDeck();
         Messenger.Broadcast(EventMessages.ON_PLAYER_MAKE_REST);
         EndPlayerTurn(false);

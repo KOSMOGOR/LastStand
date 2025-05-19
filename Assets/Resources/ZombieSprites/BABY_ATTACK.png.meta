@@ -1,0 +1,988 @@
+fileFormatVersion: 2
+guid: 0f8f0e2dca2da1b48bd3bdc4db1e8a04
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7719084931437908948
+    second: BABY_ATTACK_0
+  - first:
+      213: 4048803837020106548
+    second: BABY_ATTACK_1
+  - first:
+      213: 3254526311739924308
+    second: BABY_ATTACK_2
+  - first:
+      213: 5518899376030045238
+    second: BABY_ATTACK_3
+  - first:
+      213: 8240781899033624487
+    second: BABY_ATTACK_4
+  - first:
+      213: -5149881749938825881
+    second: BABY_ATTACK_5
+  - first:
+      213: -2905623282991317419
+    second: BABY_ATTACK_6
+  - first:
+      213: -5133216747166657026
+    second: BABY_ATTACK_7
+  - first:
+      213: 1834457033365794338
+    second: BABY_ATTACK_8
+  - first:
+      213: -8928607390381837831
+    second: BABY_ATTACK_9
+  - first:
+      213: -4472286678937042138
+    second: BABY_ATTACK_10
+  - first:
+      213: -7185168089140349223
+    second: BABY_ATTACK_11
+  - first:
+      213: 7434732036035383283
+    second: BABY_ATTACK_12
+  - first:
+      213: 7735749656628353201
+    second: BABY_ATTACK_13
+  - first:
+      213: 3728217664293424791
+    second: BABY_ATTACK_14
+  - first:
+      213: -3604632866485970360
+    second: BABY_ATTACK_15
+  - first:
+      213: 6436863071677840512
+    second: BABY_ATTACK_16
+  - first:
+      213: 5917566354373368399
+    second: BABY_ATTACK_17
+  - first:
+      213: -8277831987718904947
+    second: BABY_ATTACK_18
+  - first:
+      213: 3093999027401439462
+    second: BABY_ATTACK_19
+  - first:
+      213: 6117326653587783185
+    second: BABY_ATTACK_20
+  - first:
+      213: 7347031029394134127
+    second: BABY_ATTACK_21
+  - first:
+      213: -8288067933512916314
+    second: BABY_ATTACK_22
+  - first:
+      213: 2451631020659990718
+    second: BABY_ATTACK_23
+  - first:
+      213: 2495751118801024443
+    second: BABY_ATTACK_24
+  - first:
+      213: -2155687763491137106
+    second: BABY_ATTACK_25
+  - first:
+      213: 6136265298765231193
+    second: BABY_ATTACK_26
+  - first:
+      213: -8232459878140623178
+    second: BABY_ATTACK_27
+  - first:
+      213: 2632468671753595436
+    second: BABY_ATTACK_28
+  - first:
+      213: 3370575137945445300
+    second: BABY_ATTACK_29
+  - first:
+      213: -5915811998014007101
+    second: BABY_ATTACK_30
+  - first:
+      213: -7947584675175842267
+    second: BABY_ATTACK_31
+  - first:
+      213: 8231809817725386181
+    second: BABY_ATTACK_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BABY_ATTACK_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 2
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2ca29ef62d40e490800000000000000
+      internalID: -7719084931437908948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABY_ATTACK_1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 2
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43f62d663ad303830800000000000000
+      internalID: 4048803837020106548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABY_ATTACK_2
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 2
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45f9b63ff666a2d20800000000000000
+      internalID: 3254526311739924308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABY_ATTACK_3
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 634556bfdb1179c40800000000000000
+      internalID: 5518899376030045238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABY_ATTACK_4
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 2
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7af3e53c9732d5270800000000000000
+      internalID: 8240781899033624487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABY_ATTACK_5
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 2
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76511ab65d1f788b0800000000000000
+      internalID: -5149881749938825881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABY_ATTACK_6
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 2
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55eb23ec4072da7d0800000000000000
+      internalID: -2905623282991317419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABY_ATTACK_7
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 2
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef59b0eb09623c8b0800000000000000
+      internalID: -5133216747166657026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABY_ATTACK_8
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 2
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22e2c75d3fc457910800000000000000
+      internalID: 1834457033365794338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABY_ATTACK_9
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 2
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f1fc5d52e6371480800000000000000
+      internalID: -8928607390381837831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABY_ATTACK_10
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 2
+        width: 24
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6230f30f5fe3fe1c0800000000000000
+      internalID: -4472286678937042138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABY_ATTACK_11
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 2
+        width: 22
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d6315b01b7294c90800000000000000
+      internalID: -7185168089140349223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABY_ATTACK_12
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 23
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ff0b1855697d2760800000000000000
+      internalID: 7434732036035383283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABY_ATTACK_13
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 2
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b8dea2b357ea5b60800000000000000
+      internalID: 7735749656628353201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABY_ATTACK_14
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 23
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79ecb85763a4db330800000000000000
+      internalID: 3728217664293424791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABY_ATTACK_15
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 23
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84ad76f8185c9fdc0800000000000000
+      internalID: -3604632866485970360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABY_ATTACK_16
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 2
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08cff271cd4545950800000000000000
+      internalID: 6436863071677840512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABY_ATTACK_17
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 23
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4a5a372f3b6f1250800000000000000
+      internalID: 5917566354373368399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABY_ATTACK_18
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 23
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8326ad3aab3f1d80800000000000000
+      internalID: -8277831987718904947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABY_ATTACK_19
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 2
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e8baa309b710fa20800000000000000
+      internalID: 3093999027401439462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABY_ATTACK_20
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 23
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11ef0223e2c15e450800000000000000
+      internalID: 6117326653587783185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABY_ATTACK_21
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 23
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f645fc48bc5e5f560800000000000000
+      internalID: 7347031029394134127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABY_ATTACK_22
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 2
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a228a4602edafc80800000000000000
+      internalID: -8288067933512916314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABY_ATTACK_23
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 23
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb064ca8c61f50220800000000000000
+      internalID: 2451631020659990718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABY_ATTACK_24
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 23
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb53be36b60b2a220800000000000000
+      internalID: 2495751118801024443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABY_ATTACK_25
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 2
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea9547286657512e0800000000000000
+      internalID: -2155687763491137106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABY_ATTACK_26
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 23
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 954357427c4682550800000000000000
+      internalID: 6136265298765231193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABY_ATTACK_27
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 23
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b6c5c7bb5d60cd80800000000000000
+      internalID: -8232459878140623178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABY_ATTACK_28
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 2
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2aa73e3f48688420800000000000000
+      internalID: 2632468671753595436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABY_ATTACK_29
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 23
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b3600ada30b6ce20800000000000000
+      internalID: 3370575137945445300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABY_ATTACK_30
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 2
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c89164c450d6eda0800000000000000
+      internalID: -5915811998014007101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABY_ATTACK_31
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 2
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52e3ec598d184b190800000000000000
+      internalID: -7947584675175842267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BABY_ATTACK_32
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 2
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cd381c4a634d3270800000000000000
+      internalID: 8231809817725386181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BABY_ATTACK_0: -7719084931437908948
+      BABY_ATTACK_1: 4048803837020106548
+      BABY_ATTACK_10: -4472286678937042138
+      BABY_ATTACK_11: -7185168089140349223
+      BABY_ATTACK_12: 7434732036035383283
+      BABY_ATTACK_13: 7735749656628353201
+      BABY_ATTACK_14: 3728217664293424791
+      BABY_ATTACK_15: -3604632866485970360
+      BABY_ATTACK_16: 6436863071677840512
+      BABY_ATTACK_17: 5917566354373368399
+      BABY_ATTACK_18: -8277831987718904947
+      BABY_ATTACK_19: 3093999027401439462
+      BABY_ATTACK_2: 3254526311739924308
+      BABY_ATTACK_20: 6117326653587783185
+      BABY_ATTACK_21: 7347031029394134127
+      BABY_ATTACK_22: -8288067933512916314
+      BABY_ATTACK_23: 2451631020659990718
+      BABY_ATTACK_24: 2495751118801024443
+      BABY_ATTACK_25: -2155687763491137106
+      BABY_ATTACK_26: 6136265298765231193
+      BABY_ATTACK_27: -8232459878140623178
+      BABY_ATTACK_28: 2632468671753595436
+      BABY_ATTACK_29: 3370575137945445300
+      BABY_ATTACK_3: 5518899376030045238
+      BABY_ATTACK_30: -5915811998014007101
+      BABY_ATTACK_31: -7947584675175842267
+      BABY_ATTACK_32: 8231809817725386181
+      BABY_ATTACK_4: 8240781899033624487
+      BABY_ATTACK_5: -5149881749938825881
+      BABY_ATTACK_6: -2905623282991317419
+      BABY_ATTACK_7: -5133216747166657026
+      BABY_ATTACK_8: 1834457033365794338
+      BABY_ATTACK_9: -8928607390381837831
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

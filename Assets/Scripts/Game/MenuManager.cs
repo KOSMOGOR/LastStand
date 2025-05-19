@@ -27,7 +27,7 @@ public class MenuManager : MonoBehaviour
 
     void Awake() {
         if (I != null) Destroy(gameObject);
-        I = this;
+        else I = this;
         playOpportunities = playOpportunitiesParent.GetComponentsInChildren<Transform>().Where(t => t != playOpportunitiesParent).Select(t => t.gameObject).ToList();
         playOpportunities.ForEach(po => po.SetActive(false));
         poActiveCount = 0;

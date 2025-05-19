@@ -54,4 +54,11 @@ public class Tile : MonoBehaviour
         if (blockingProjectilesObstacles.Count > 0) return blockingProjectilesObstacles.First();
         return null;
     }
+
+    public void Clear() {
+        new List<BaseZombie>(zombies).ForEach(z => DestroyImmediate(z.gameObject));
+        zombies.Clear();
+        new List<BaseObstacle>(obstacles).ForEach(o => DestroyImmediate(o.gameObject));
+        obstacles.Clear();
+    }
 }

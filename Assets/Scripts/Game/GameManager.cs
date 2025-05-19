@@ -21,13 +21,13 @@ public class GameManager : MonoBehaviour
 
     void Awake() {
         if (I != null) Destroy(gameObject);
-        I = this;
-        Messenger<BaseZombie>.AddListener<float>(EventMessages.EVALUATE_ZOMBIE_SPEED, z => GetCurrentDayTime() switch {
+        else I = this;
+        Messenger<BaseZombie>.AddListener(EventMessages.EVALUATE_ZOMBIE_SPEED, z => GetCurrentDayTime() switch {
             DayTime.Day => -0.5f,
             DayTime.Night => 0.25f,
             _ => 0,
         });
-        Messenger<BaseZombie>.AddListener<int>(EventMessages.EVALUATE_ZOMBIE_DAMAGE, z => GetCurrentDayTime() switch {
+        Messenger<BaseZombie>.AddListener(EventMessages.EVALUATE_ZOMBIE_DAMAGE, z => GetCurrentDayTime() switch {
             DayTime.Day => -1,
             DayTime.Night => 1,
             _ => 0,
@@ -43,9 +43,12 @@ public class GameManager : MonoBehaviour
         currentState = newState;
         switch (currentState) {
             case GameState.PrepareGame:
+                Player.I.SetDeckToBase();
+                ChangeState(GameState.PrepareLevel);
+                break;
+            case GameState.PrepareLevel:
                 GridManager.I.GenerateGrid();
                 Player.I.playerHp = Player.I.playerMaxHp;
-                Player.I.SetDeckToBase();
                 ChangeState(GameState.PlayerTurn);
                 break;
             case GameState.PlayerTurn:
@@ -60,6 +63,9 @@ public class GameManager : MonoBehaviour
                 currentDayTimeInd = (currentDayTimeInd + 1) % dayTimeList.Count;
                 Messenger<DayTime>.Broadcast(EventMessages.ON_DAYTIME_CHANGE, dayTimeList[currentDayTimeInd]);
                 ChangeState(GameState.PlayerTurn);
+                break;
+            case GameState.Shopping:
+                ShopManager.I.InitializeShop();
                 break;
         }
     }
@@ -141,9 +147,11 @@ public class GameManager : MonoBehaviour
 
 public enum GameState {
     PrepareGame,
+    PrepareLevel,
     PlayerTurn,
     ZombieTurn,
     ChangeTime,
+    Shopping,
     Defeated
 }
 
