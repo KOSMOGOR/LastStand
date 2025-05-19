@@ -9,8 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 752bff1706cf66747a9ed9a660602fb7, type: 3}
-  m_Name: TestZombieSpawnInfo
+  m_Script: {fileID: 11500000, guid: be7e1ae5afa6ddd4eb8a6688559429bf, type: 3}
+  m_Name: PartyZombie
   m_EditorClassIdentifier: 
-  prefab: {fileID: 8917658416524687207, guid: 258877b26da9d9940a14fe66170a8675, type: 3}
-  aggressionCost: 1
+  prefab: {fileID: -348415893971603486, guid: eebfdeb471957a04eac13e7dc5679cc0, type: 3}
+  aggressionCost: 5
+  minimumLevel: 10

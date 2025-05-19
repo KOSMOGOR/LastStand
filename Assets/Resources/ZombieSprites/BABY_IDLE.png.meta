@@ -119,12 +119,12 @@ TextureImporter:
       name: BABY_IDLE_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 2
-        width: 26
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 32
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -141,12 +141,12 @@ TextureImporter:
       name: BABY_IDLE_1
       rect:
         serializedVersion: 2
-        x: 35
-        y: 2
-        width: 26
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 32
+        y: 0
+        width: 32
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -163,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 05fb9a9dc99b52c41bb56dcf1966275e
     internalID: 0
     vertices: []
     indices: 

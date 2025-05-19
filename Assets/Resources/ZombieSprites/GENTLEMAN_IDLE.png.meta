@@ -119,12 +119,12 @@ TextureImporter:
       name: GENTLEMAN_IDLE_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 1
-        width: 27
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 32
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -141,12 +141,12 @@ TextureImporter:
       name: GENTLEMAN_IDLE_1
       rect:
         serializedVersion: 2
-        x: 34
-        y: 1
-        width: 27
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 32
+        y: 0
+        width: 32
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -163,7 +163,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 17085dc0536ccd147bd595f470aa6cea
     internalID: 0
     vertices: []
     indices: 
