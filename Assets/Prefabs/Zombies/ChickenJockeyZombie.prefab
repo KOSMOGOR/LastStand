@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1010926703938435420}
   - component: {fileID: 5755272227707735194}
   - component: {fileID: 6568082158783468804}
+  - component: {fileID: 7213689461809972396}
   m_Layer: 0
   m_Name: ChickenJockeyZombie
   m_TagString: Untagged
@@ -108,5 +109,28 @@ MonoBehaviour:
   progression: 0
   progressionThreshold: 1
   descrription: 
+  spritePrefix: ZOMBIE
   stunned: 0
   zombieSpawnOnDeathPrefab: {fileID: 3820582994718389918, guid: 5073b62df4e1a644598e15ff05d2d208, type: 3}
+--- !u!95 &7213689461809972396
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296630035594389351}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e8500232ac0113140aac372037833b7a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

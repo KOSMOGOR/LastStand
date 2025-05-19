@@ -119,10 +119,10 @@ TextureImporter:
       name: OBSTACLES_0
       rect:
         serializedVersion: 2
-        x: 17
-        y: 110
-        width: 14
-        height: 6
+        x: 0
+        y: 96
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,10 +141,10 @@ TextureImporter:
       name: OBSTACLES_1
       rect:
         serializedVersion: 2
-        x: 56
-        y: 97
-        width: 32
-        height: 19
+        x: 48
+        y: 96
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,10 +163,10 @@ TextureImporter:
       name: OBSTACLES_2
       rect:
         serializedVersion: 2
-        x: 13
-        y: 72
-        width: 22
-        height: 24
+        x: 0
+        y: 64
+        width: 48
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

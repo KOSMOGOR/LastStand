@@ -50,6 +50,7 @@ public class GameManager : MonoBehaviour
                 GridManager.I.GenerateGrid();
                 Player.I.playerHp = Player.I.playerMaxHp;
                 Player.I.ShuffleDeck();
+                SetZombieAggressionPoints();
                 ChangeState(GameState.PlayerTurn);
                 break;
             case GameState.PlayerTurn:
@@ -87,7 +88,7 @@ public class GameManager : MonoBehaviour
         GridManager.I.SetZombieVisibility();
         bool zombiesExists = GridManager.I.GetZombiesCount() > 0;
         SpawnWaveZombies(zombiesExists);
-        ChangeState(GameState.ChangeTime);
+        if (currentState == GameState.ZombieTurn) ChangeState(GameState.ChangeTime);
     }
 
     public void AllZombiesProgress() {
@@ -144,6 +145,10 @@ public class GameManager : MonoBehaviour
             Tile tileToSpawn = GridManager.I.GetTileToSpawnZombie();
             BaseZombie.SpawnZombie(zombieSpawnInfo.prefab, tileToSpawn);
         }
+    }
+
+    void SetZombieAggressionPoints() {
+        zombiesAggressionPoints = Player.I.deck.Sum(c => c.cardData.aggressionCost);
     }
 }
 

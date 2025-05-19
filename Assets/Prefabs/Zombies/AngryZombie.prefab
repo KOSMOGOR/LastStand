@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1010926703938435420}
   - component: {fileID: 5755272227707735194}
   - component: {fileID: 3820582994718389918}
+  - component: {fileID: 1976524419187347979}
   m_Layer: 0
   m_Name: AngryZombie
   m_TagString: Untagged
@@ -77,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 5093695192268335082, guid: 054aa9a45b266c34880aff882b9a1d5a, type: 3}
+  m_Sprite: {fileID: -6103165210982971135, guid: c872e58b15cbe8e45b95df4ec0c7eedd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -108,4 +109,27 @@ MonoBehaviour:
   progression: 0
   progressionThreshold: 1
   descrription: 
+  spritePrefix: ANGRY
   stunned: 0
+--- !u!95 &1976524419187347979
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1296630035594389351}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e8500232ac0113140aac372037833b7a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

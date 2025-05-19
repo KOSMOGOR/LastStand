@@ -88,9 +88,10 @@ public class Player : MonoBehaviour
         if (!CanPlayChosenCard()) return;
         playOpportunities -= 1;
         canRest = false;
-        cardsPlayedThisTurn.Add(chosenCard);
-        chosenCard.Play();
-        MoveCardFromHandToDiscard(chosenCard);
+        Card card = chosenCard;
+        cardsPlayedThisTurn.Add(card);
+        card.Play();
+        MoveCardFromHandToDiscard(card);
         ChooseCard(null);
     }
 
@@ -112,6 +113,8 @@ public class Player : MonoBehaviour
     }
 
     public void MoveCardFromHandToDiscard(Card card) {
+        print(card);
+        print(card.handInd);
         int handInd = card.handInd;
         card.SetHandInd(-1);
         card.SetShown(true);
@@ -193,7 +196,10 @@ public class Player : MonoBehaviour
     void ChangeStateToNew() {
         GameState newState = GameState.ZombieTurn;
         if (GameManager.I.zombiesAggressionPoints == 0 && GridManager.I.GetZombiesCount() == 0) newState = GameState.Shopping;
-        if (newState == GameState.Shopping) DiscardHand();
+        if (newState == GameState.Shopping) {
+            Messenger.Broadcast(EventMessages.ON_ZOMBIE_END_TURN);
+            DiscardHand();
+        }
         GameManager.I.ChangeState(newState);
     }
 

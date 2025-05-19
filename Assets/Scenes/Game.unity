@@ -9428,10 +9428,6 @@ PrefabInstance:
       propertyPath: testZombie
       value: 
       objectReference: {fileID: 8917658416524687207, guid: 258877b26da9d9940a14fe66170a8675, type: 3}
-    - target: {fileID: 6787511424303098969, guid: 34f0d2683c1c6854e8479e4c4bc29d1f, type: 3}
-      propertyPath: zombiesAggressionPoints
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7113923927633982736, guid: 34f0d2683c1c6854e8479e4c4bc29d1f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

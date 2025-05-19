@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 3820582994718389918, guid: 7620b2dc3e0b64c419f1223156ea5c74, type: 3}
   aggressionCost: 2
-  minimumLevel: 2
+  minimumLevel: 1
