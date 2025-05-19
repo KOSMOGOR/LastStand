@@ -59,7 +59,7 @@ MonoBehaviour:
   topDiscardCard: {fileID: 0}
   chosenCard: {fileID: 0}
   maxHandSize: 0
-  digitalCurrency: 0
+  digitalCurrency: 50
   playOpportunities: 0
   cardsPlayedThisTurn: []
   canRest: 0

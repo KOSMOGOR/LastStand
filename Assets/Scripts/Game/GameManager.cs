@@ -49,6 +49,7 @@ public class GameManager : MonoBehaviour
             case GameState.PrepareLevel:
                 GridManager.I.GenerateGrid();
                 Player.I.playerHp = Player.I.playerMaxHp;
+                Player.I.ShuffleDeck();
                 ChangeState(GameState.PlayerTurn);
                 break;
             case GameState.PlayerTurn:
@@ -65,6 +66,7 @@ public class GameManager : MonoBehaviour
                 ChangeState(GameState.PlayerTurn);
                 break;
             case GameState.Shopping:
+                Player.I.ShuffleDiscardToDeck();
                 ShopManager.I.InitializeShop();
                 break;
         }

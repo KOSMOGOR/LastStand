@@ -79,9 +79,11 @@ public class MenuManager : MonoBehaviour
 
     public void ShowNewTurnText(GameState state) {
         if (state == GameState.PlayerTurn) {
+            newTurnText.GetComponent<Animation>().Stop();
             newTurnText.GetComponent<SpriteRenderer>().sprite = playerTurnSprite;
             newTurnText.GetComponent<Animation>().Play();
         } else if (state == GameState.ZombieTurn) {
+            newTurnText.GetComponent<Animation>().Stop();
             newTurnText.GetComponent<SpriteRenderer>().sprite = zombieTurnSprite;
             newTurnText.GetComponent<Animation>().Play();
         }

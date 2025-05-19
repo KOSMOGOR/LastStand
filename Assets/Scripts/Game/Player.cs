@@ -193,6 +193,7 @@ public class Player : MonoBehaviour
     void ChangeStateToNew() {
         GameState newState = GameState.ZombieTurn;
         if (GameManager.I.zombiesAggressionPoints == 0 && GridManager.I.GetZombiesCount() == 0) newState = GameState.Shopping;
+        if (newState == GameState.Shopping) DiscardHand();
         GameManager.I.ChangeState(newState);
     }
 

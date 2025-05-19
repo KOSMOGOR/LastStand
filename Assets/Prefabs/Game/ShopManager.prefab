@@ -632,7 +632,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2052778358543856497
 Transform:
   m_ObjectHideFlags: 0
@@ -762,7 +762,7 @@ Transform:
   m_GameObject: {fileID: 8610597365017695862}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.726252, y: -1.6868606, z: -0.023376772}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -789,6 +789,8 @@ MonoBehaviour:
   - {fileID: 9193559233919998038}
   shopCardPrefab: {fileID: -4495499059416275959, guid: 4324329e8a8d917498028db42c3f4c78, type: 3}
   exitButton: {fileID: 7048954004975230427}
+  buyButton: {fileID: 1570846051367014382}
+  shopCardSelectorPrefab: {fileID: 3997923493792042184, guid: 4113977900fdca54397f9c2253048221, type: 3}
   shopSize: 0
   shopCards: []
   chosenShopCard: {fileID: 0}

@@ -11,6 +11,7 @@ public class ShopManager : MonoBehaviour
     public ShopCard shopCardPrefab;
     public Button exitButton;
     public Button buyButton;
+    public GameObject shopCardSelectorPrefab;
 
     [Header("Internal")]
     public int shopSize;
@@ -18,12 +19,15 @@ public class ShopManager : MonoBehaviour
     public ShopCard chosenShopCard;
 
     public static ShopManager I;
+    GameObject shopCardSelector;
 
     void Awake() {
         if (I != null) Destroy(gameObject);
         else I = this;
         shopSize = cardTransforms.Count;
         shopBase.SetActive(false);
+        shopCardSelector = Instantiate(shopCardSelectorPrefab);
+        ChooseShopCard(null);
     }
 
     void Update() {
@@ -37,7 +41,7 @@ public class ShopManager : MonoBehaviour
     }
 
     void EmptyShopCards() {
-        shopCards.ForEach(sc => Destroy(sc.gameObject));
+        shopCards.ForEach(sc => { if (sc != null) Destroy(sc.gameObject); });
         shopCards.Clear();
     }
 
@@ -59,6 +63,7 @@ public class ShopManager : MonoBehaviour
     }
 
     public void ChooseShopCard(ShopCard shopCard) {
+        SetShopCardSelectorCard(shopCard);
         if (shopCard == null) { chosenShopCard = null; return; }
         if (GameManager.I.currentState != GameState.Shopping || !shopCards.Contains(shopCard)) return;
         chosenShopCard = shopCard;
@@ -75,12 +80,12 @@ public class ShopManager : MonoBehaviour
         Player.I.digitalCurrency -= chosenShopCard.cardCost;
         Card card = Player.I.InitializeCard(chosenShopCard.cardData);
         Player.I.AddCardToDeck(card);
-        Destroy(chosenShopCard);
-        chosenShopCard = null;
+        Destroy(chosenShopCard.gameObject);
+        ChooseShopCard(null);
     }
 
     bool CanExitShop() {
-        return shopCards.Count == 0 || shopCards.Any(sc => sc.cardCost <= Player.I.digitalCurrency);
+        return shopCards.Count == 0 || shopCards.Any(sc => sc.cardCost > Player.I.digitalCurrency);
     }
 
     public void ExitShop() {
@@ -96,5 +101,13 @@ public class ShopManager : MonoBehaviour
 
     void SetBuyButtonActive() {
         buyButton.gameObject.SetActive(CanBuyChosenCard());
+    }
+
+    void SetShopCardSelectorCard(ShopCard shopCard) {
+        if (shopCard == null) shopCardSelector.SetActive(false);
+        else {
+            shopCardSelector.SetActive(true);
+            shopCardSelector.transform.SetPositionAndRotation(shopCard.transform.position, shopCard.transform.rotation);
+        }
     }
 }
