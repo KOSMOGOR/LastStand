@@ -7,6 +7,7 @@ public class Card : MonoBehaviour
     public bool chosen = false;
     public int handInd = -1; // -1 - not in hand
     public bool shown = false;
+    public Animator cardRevealAnimator;
 
     SpriteRenderer spriteRenderer;
     BoxCollider2D col;
@@ -44,8 +45,10 @@ public class Card : MonoBehaviour
 
     public void SetShown(bool shown) {
         this.shown = shown;
+        cardRevealAnimator.SetBool("revealed", shown);
         spriteRenderer.enabled = shown;
         col.enabled = shown;
+        cardRevealAnimator.GetComponent<SpriteRenderer>().enabled = shown;
     }
 
     public bool IsInHand() { return handInd != -1; }

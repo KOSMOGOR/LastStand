@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,6 +13,10 @@ public class ShopManager : MonoBehaviour
     public Button buyButton;
     public GameObject shopCardSelectorPrefab;
     public TMP_Text digitalCurrencyText;
+    public Button rerollButton;
+    public TMP_Text rerollPriceText;
+    int rerollPrice;
+    int rerollPriceRiced = 0;
 
     [Header("Internal")]
     public int shopSize;
@@ -36,10 +39,12 @@ public class ShopManager : MonoBehaviour
         SetExitButtonActive();
         SetBuyButtonActive();
         SetDCText();
+        SetRerollPrice();
     }
 
     public void InitializeShop() {
         shopBase.SetActive(true);
+        ResetReroll();
         SetShopCards();
     }
 
@@ -85,6 +90,7 @@ public class ShopManager : MonoBehaviour
         Player.I.AddCardToDeck(card);
         Destroy(chosenShopCard.gameObject);
         ChooseShopCard(null);
+        ResetReroll();
     }
 
     bool CanExitShop() {
@@ -116,5 +122,28 @@ public class ShopManager : MonoBehaviour
 
     void SetDCText() {
         digitalCurrencyText.text = $"x{Player.I.digitalCurrency}";
+    }
+
+    void ResetReroll() {
+        rerollPrice = (int)(GameManager.I.currentLevel * 0.1) * 25 + 50;
+        rerollPriceRiced = 0;
+    }
+
+    bool CanReroll() {
+        return Player.I.digitalCurrency >= rerollPrice && rerollPriceRiced < 2;
+    }
+
+    public void Reroll() {
+        if (!CanReroll()) return;
+        Player.I.digitalCurrency -= rerollPrice;
+        SetShopCards();
+        rerollPrice *= 2;
+        rerollPriceRiced += 1;
+    }
+
+    void SetRerollPrice() {
+        rerollPriceText.text = $"x{rerollPrice}";
+        rerollButton.gameObject.SetActive(CanReroll());
+        rerollPriceText.gameObject.SetActive(rerollPriceRiced < 2);
     }
 }

@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
 
     [Header("Internal")]
     public GameState currentState;
-    public int currentLevel = 1;
+    public int currentLevel = 0;
     public int currentDayTimeInd = 0;
     public List<BaseZombieSpawnInfo> zombieSpawnInfos;
     public int zombiesAggressionPoints = 0;
@@ -44,12 +44,14 @@ public class GameManager : MonoBehaviour
         switch (currentState) {
             case GameState.PrepareGame:
                 Player.I.SetDeckToBase();
+                currentLevel = 0;
                 ChangeState(GameState.PrepareLevel);
                 break;
             case GameState.PrepareLevel:
                 GridManager.I.GenerateGrid();
                 Player.I.playerHp = Player.I.playerMaxHp;
                 Player.I.ShuffleDeck();
+                currentLevel += 1;
                 SetZombieAggressionPoints();
                 ChangeState(GameState.PlayerTurn);
                 break;

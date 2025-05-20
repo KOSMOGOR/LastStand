@@ -15,7 +15,7 @@ public class BaseZombie : BaseTileEntity
     [TextArea] public string description;
     public string spritePrefix = "ZOMBIE";
     public GameObject stunPrefab;
-    public int aggressionCost;
+    public int aggressionCost = 1;
 
     public bool stunned = false;
 
