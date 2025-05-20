@@ -108,9 +108,10 @@ MonoBehaviour:
   damage: 2
   progression: 0
   progressionThreshold: 1
-  descrription: 
+  description: 
   spritePrefix: BABY
   stunPrefab: {fileID: 8304985053189587063, guid: e5d67339da55f9c419ba1136fe46f740, type: 3}
+  aggressionCost: 1
   stunned: 0
 --- !u!95 &6018838726241244516
 Animator:

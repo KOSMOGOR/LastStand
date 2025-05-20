@@ -108,9 +108,10 @@ MonoBehaviour:
   damage: 3
   progression: 0
   progressionThreshold: 1
-  descrription: 
+  description: 
   spritePrefix: ANGRY
   stunPrefab: {fileID: 8304985053189587063, guid: e5d67339da55f9c419ba1136fe46f740, type: 3}
+  aggressionCost: 2
   stunned: 0
 --- !u!95 &1976524419187347979
 Animator:

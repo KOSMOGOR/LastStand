@@ -108,9 +108,10 @@ MonoBehaviour:
   damage: 0
   progression: 0
   progressionThreshold: 1
-  descrription: 
+  description: 
   spritePrefix: ZOMBIE
   stunPrefab: {fileID: 8304985053189587063, guid: e5d67339da55f9c419ba1136fe46f740, type: 3}
+  aggressionCost: 4
   stunned: 0
   minPossibleHp: 6
   maxPossibleHp: 20

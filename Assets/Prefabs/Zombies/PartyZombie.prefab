@@ -108,9 +108,10 @@ MonoBehaviour:
   damage: 1
   progression: 0
   progressionThreshold: 1
-  descrription: 
+  description: 
   spritePrefix: PARTY
   stunPrefab: {fileID: 8304985053189587063, guid: e5d67339da55f9c419ba1136fe46f740, type: 3}
+  aggressionCost: 5
   stunned: 0
   obstacleSpawnOnDeathPrefab: {fileID: 5451685389975948647, guid: 4b33a9857780e27458f6673e0fae9b93, type: 3}
 --- !u!95 &3147038914778836464

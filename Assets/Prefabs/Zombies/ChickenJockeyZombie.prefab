@@ -108,9 +108,10 @@ MonoBehaviour:
   damage: 3
   progression: 0
   progressionThreshold: 1
-  descrription: 
+  description: 
   spritePrefix: CHICKENJOCKEY
   stunPrefab: {fileID: 8304985053189587063, guid: e5d67339da55f9c419ba1136fe46f740, type: 3}
+  aggressionCost: 6
   stunned: 0
   zombieSpawnOnDeathPrefab: {fileID: 3820582994718389918, guid: 5073b62df4e1a644598e15ff05d2d208, type: 3}
 --- !u!95 &7213689461809972396

@@ -23,6 +23,8 @@ public class MenuManager : MonoBehaviour
     public TMP_Text digitalCurrencyText;
     public Animator dayTimeCycleAnimator;
     DayTime lastSeenDayTime = DayTime.Day;
+    public TMP_Text deckCount;
+    public TMP_Text discardCount;
 
     GameObject newTurnText;
 
@@ -47,6 +49,7 @@ public class MenuManager : MonoBehaviour
         SetCardDescription();
         SetDCText();
         UpdateDayTime();
+        SetCardsCount();
     }
 
     void SetPlayOpportunities() {
@@ -114,5 +117,10 @@ public class MenuManager : MonoBehaviour
             }
             lastSeenDayTime = currentDayTime;
         }
+    }
+
+    void SetCardsCount() {
+        deckCount.text = $"x{Player.I.deck.Count}";
+        discardCount.text = $"x{Player.I.discardPile.Count}";
     }
 }

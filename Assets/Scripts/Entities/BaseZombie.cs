@@ -121,7 +121,7 @@ public class BaseZombie : BaseTileEntity
         SetTile(null);
         animator.SetTrigger("death");
         IEnumerator DestroyThis() {
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(3);
             Destroy(gameObject);
         }
         StartCoroutine(DestroyThis());
