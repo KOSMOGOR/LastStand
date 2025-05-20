@@ -124,6 +124,7 @@ public class Player : MonoBehaviour
     }
 
     public void MoveCardFromHandToDiscard(Card card) {
+        if (!hand.Contains(card)) return;
         int handInd = card.handInd;
         card.SetHandInd(-1);
         card.SetShown(true);
