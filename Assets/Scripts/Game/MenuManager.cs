@@ -21,6 +21,8 @@ public class MenuManager : MonoBehaviour
     public Sprite zombieTurnSprite;
     public TMP_Text descriptionText;
     public TMP_Text digitalCurrencyText;
+    public Animator dayTimeCycleAnimator;
+    DayTime lastSeenDayTime = DayTime.Day;
 
     GameObject newTurnText;
 
@@ -44,6 +46,7 @@ public class MenuManager : MonoBehaviour
         SetDayTimeOverlays();
         SetCardDescription();
         SetDCText();
+        UpdateDayTime();
     }
 
     void SetPlayOpportunities() {
@@ -98,5 +101,18 @@ public class MenuManager : MonoBehaviour
 
     void SetDCText() {
         digitalCurrencyText.text = $"x{Player.I.digitalCurrency}";
+    }
+
+    void UpdateDayTime() {
+        DayTime currentDayTime = GameManager.I.GetCurrentDayTime();
+        if (lastSeenDayTime != currentDayTime) {
+            switch (currentDayTime) {
+                case DayTime.Day: dayTimeCycleAnimator.SetTrigger("day"); break;
+                case DayTime.Evening: dayTimeCycleAnimator.SetTrigger("evening"); break;
+                case DayTime.Night: dayTimeCycleAnimator.SetTrigger("night"); break;
+                case DayTime.Morning: dayTimeCycleAnimator.SetTrigger("morning"); break;
+            }
+            lastSeenDayTime = currentDayTime;
+        }
     }
 }
