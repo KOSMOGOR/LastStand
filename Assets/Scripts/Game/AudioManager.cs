@@ -76,7 +76,8 @@ public enum SoundType {
     Submachinegun,
     ZombieBite,
     ZombieStep,
-    UIClick
+    UIClick,
+    ZombieGrowl
 }
 
 [Serializable]

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cedc132a193079140a8158eb1e84166e, type: 3}
+  m_Name: 14_SNIPER_RIFLE
+  m_EditorClassIdentifier: 
+  cardName: Sniper Rifle
+  aggressionCost: 2
+  cardDescription: Deal 4 Shooting damage in lane. Deal 4 piercing damage in lane.
+  cardType: 0
+  cardSprite: {fileID: 21300000, guid: b4a7c63366fb8b546bfc63fbe84becbe, type: 3}
+  gridSelectionType: 2
+  playConditions: []
+  effects:
+  - {fileID: 11400000, guid: bc429e0e83dade14ba10db80ddba5963, type: 2}
+  - {fileID: 11400000, guid: da49ebc3f9bf3e24d95f895d7bd294af, type: 2}

@@ -130,6 +130,7 @@ public class BaseZombie : BaseTileEntity
     public static void SpawnZombie(BaseZombie prefab, Tile tile) {
         Instantiate(prefab).SetTile(tile);
         new List<BaseObstacle>(tile.obstacles).ForEach(o => o.Die());
+        AudioManager.I.PlaySound(SoundType.ZombieGrowl);
     }
 
     public void SetVisible(bool visible) {
