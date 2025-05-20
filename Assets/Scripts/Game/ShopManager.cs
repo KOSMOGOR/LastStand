@@ -49,6 +49,7 @@ public class ShopManager : MonoBehaviour
     }
 
     void EmptyShopCards() {
+        ChooseShopCard(null);
         shopCards.ForEach(sc => { if (sc != null) Destroy(sc.gameObject); });
         shopCards.Clear();
     }
@@ -94,7 +95,7 @@ public class ShopManager : MonoBehaviour
     }
 
     bool CanExitShop() {
-        return shopCards.Count == 0 || shopCards.Any(sc => sc.cardCost > Player.I.digitalCurrency);
+        return shopCards.Count == 0 || shopCards.All(sc => sc.cardCost > Player.I.digitalCurrency);
     }
 
     public void ExitShop() {

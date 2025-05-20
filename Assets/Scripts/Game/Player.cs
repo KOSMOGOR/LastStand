@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
     public Card topDiscardCard;
     public Card chosenCard;
     public int maxHandSize;
-    public int digitalCurrency = 50;
+    public int digitalCurrency;
     public int playOpportunities = 0;
     public List<Card> cardsPlayedThisTurn = new();
     public bool canRest = false;

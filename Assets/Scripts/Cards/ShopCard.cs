@@ -15,7 +15,7 @@ public class ShopCard : MonoBehaviour
 
     public void SetCardData(CardData cardData) {
         this.cardData = cardData;
-        cardCost = Random.Range(25, 51) * cardData.aggressionCost;
+        cardCost = Random.Range(5, 10) * cardData.aggressionCost;
         cardCostText.text = cardCost.ToString();
         sprite.sprite = cardData.cardSprite;
     }

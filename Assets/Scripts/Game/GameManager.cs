@@ -47,6 +47,7 @@ public class GameManager : MonoBehaviour
                 AudioManager.I.StartMusic();
                 gameOver.SetActive(false);
                 Player.I.SetDeckToBase();
+                Player.I.digitalCurrency = 20;
                 currentLevel = 0;
                 currentDayTimeInd = 0;
                 ChangeState(GameState.PrepareLevel);

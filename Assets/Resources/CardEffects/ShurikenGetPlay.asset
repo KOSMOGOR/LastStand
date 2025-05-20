@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d6a9e11b1e6bd04a8a5c4066927042d, type: 3}
   m_Name: ShurikenGetPlay
   m_EditorClassIdentifier: 
-  playOpportunities: 2
+  playOpportunities: 1
