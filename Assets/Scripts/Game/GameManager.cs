@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     public List<BaseZombieSpawnInfo> zombieSpawnInfos;
     public int zombiesAggressionPoints = 0;
     public float zombieTurnDelay = 1;
+    public GameObject gameOver;
 
     public static GameManager I;
 
@@ -43,8 +44,11 @@ public class GameManager : MonoBehaviour
         currentState = newState;
         switch (currentState) {
             case GameState.PrepareGame:
+                AudioManager.I.StartMusic();
+                gameOver.SetActive(false);
                 Player.I.SetDeckToBase();
                 currentLevel = 0;
+                currentDayTimeInd = 0;
                 ChangeState(GameState.PrepareLevel);
                 break;
             case GameState.PrepareLevel:
@@ -72,6 +76,10 @@ public class GameManager : MonoBehaviour
                 Player.I.ShuffleDiscardToDeck();
                 ShopManager.I.InitializeShop();
                 break;
+            case GameState.Defeated:
+                AudioManager.I.StopMusic();
+                gameOver.SetActive(true);
+                break;
         }
     }
 
@@ -87,6 +95,7 @@ public class GameManager : MonoBehaviour
         AllZombiesProgress();
         yield return new WaitForSeconds(zombieTurnDelay);
         yield return AllZombiesTakeTurn();
+        if (currentState != GameState.ZombieTurn) yield break;
         GridManager.I.SetZombieVisibility();
         bool zombiesExists = GridManager.I.GetZombiesCount() > 0;
         SpawnWaveZombies(zombiesExists);
@@ -100,10 +109,12 @@ public class GameManager : MonoBehaviour
 
     IEnumerator AllZombiesTakeTurn() {
         while (true) {
+            if (currentState != GameState.ZombieTurn) yield break;
             List<BaseZombie> zombiesCanTakeTurn = GridManager.I.GetAllZombies().Where(z => z.CanTakeTurn()).ToList();
             if (zombiesCanTakeTurn.Count == 0) yield break;
             zombiesCanTakeTurn.ForEach(z => z.TakeTurn());
             yield return new WaitForSeconds(zombieTurnDelay / 2);
+            if (currentState != GameState.ZombieTurn) yield break;
             Messenger.Broadcast(EventMessages.ON_ALL_ZOMBIE_TAKE_TURN);
             yield return new WaitForSeconds(zombieTurnDelay / 2);
         }
@@ -151,6 +162,10 @@ public class GameManager : MonoBehaviour
 
     void SetZombieAggressionPoints() {
         zombiesAggressionPoints = Player.I.deck.Sum(c => c.cardData.aggressionCost);
+    }
+
+    public void ChangeStateToPrepareGame() {
+        ChangeState(GameState.PrepareGame);
     }
 }
 

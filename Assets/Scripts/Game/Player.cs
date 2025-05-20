@@ -43,11 +43,21 @@ public class Player : MonoBehaviour
     }
 
     public void SetDeckToBase() {
+        EmptyAllCards();
         deck = startDeck.cards.Select(cd => InitializeCard(cd)).ToList();
         ShuffleDeck();
         handTransforms = parentHandTransform.GetComponentsInChildren<Transform>().Where(t => t != parentHandTransform).ToList();
         maxHandSize = handTransforms.Count;
         handTransformsOccupied = Enumerable.Repeat(false, maxHandSize).ToList();
+    }
+
+    void EmptyAllCards() {
+        hand.ForEach(c => Destroy(c.gameObject));
+        hand.Clear();
+        deck.ForEach(c => Destroy(c.gameObject));
+        deck.Clear();
+        discardPile.ForEach(c => Destroy(c.gameObject));
+        discardPile.Clear();
     }
 
     public void ChooseCard(Card card) {

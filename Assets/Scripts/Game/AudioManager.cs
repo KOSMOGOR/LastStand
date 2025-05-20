@@ -30,9 +30,8 @@ public class AudioManager : MonoBehaviour
             audioSources.Add(soundType, audioSource);
         }
         dayMusic.volume = musicVolume;
-        dayMusic.Play();
         nightMusic.volume = 0;
-        nightMusic.Play();
+        StartMusic();
     }
 
     void Update() {
@@ -55,6 +54,16 @@ public class AudioManager : MonoBehaviour
     }
 
     public void PlayUIClick() { PlaySound(SoundType.UIClick); }
+
+    public void StartMusic() {
+        dayMusic.Play();
+        nightMusic.Play();
+    }
+
+    public void StopMusic() {
+        dayMusic.Stop();
+        nightMusic.Stop();
+    }
 }
 
 public enum SoundType {
