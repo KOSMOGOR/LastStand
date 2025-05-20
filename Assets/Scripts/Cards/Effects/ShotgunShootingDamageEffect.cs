@@ -11,5 +11,6 @@ public class ShotgunShootingDamageEffect : BaseShootingDamageEffect
         adjacentTiles.ForEach(tile => {
             if (tile != null) ApplyShootingDamage(tile, damageAdjacent, secondsToDisplay: secondsToDisplay);
         });
+        AudioManager.I.PlaySound(SoundType.Shotgun);
     }
 }

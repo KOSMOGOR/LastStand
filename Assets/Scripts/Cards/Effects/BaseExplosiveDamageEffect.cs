@@ -22,6 +22,7 @@ public class BaseExplosiveDamageEffect : CardEffect
             Destroy(explotionEffect);
         }
         GridManager.I.StartCoroutine(DestroyEffect());
+        AudioManager.I.PlaySound(SoundType.Explosion);
     }
 
     public override void Activate() {

@@ -26,7 +26,6 @@ public class BaseZombie : BaseTileEntity
     void Awake() {
         sprite = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
-        // stunObject = Instantiate(stunPrefab, transform.position, transform.rotation, transform);
         stunObject = Instantiate(stunPrefab, transform);
         stunObject.SetActive(false);
     }
@@ -58,6 +57,7 @@ public class BaseZombie : BaseTileEntity
             if (doTween) {
                 transform.DOMove(tile.transform.position + tile.zombieOffset, 1);
                 animator.SetTrigger("move");
+                AudioManager.I.PlaySound(SoundType.ZombieStep);
             }
             else transform.position = tile.transform.position + tile.zombieOffset;
         }
@@ -88,9 +88,11 @@ public class BaseZombie : BaseTileEntity
         currentDamage = Math.Max(currentDamage, 1);
         if (tile.xy.y == 0 && newTile.xy.y == 0) {
             animator.SetTrigger("attack");
+            AudioManager.I.PlaySound(SoundType.ZombieBite);
             Player.I.TakeDamage(currentDamage);
         } else if (obstacle != null) {
             animator.SetTrigger("attack");
+            AudioManager.I.PlaySound(SoundType.ZombieBite);
             Messenger<BaseZombie, int, BaseObstacle>.Broadcast(EventMessages.ON_ZOMBIE_DEAL_DAMAGE_TO_OBSTACLE, this, currentDamage, obstacle);
             obstacle.TakeDamage(currentDamage, DamageType.Zombie);
         }

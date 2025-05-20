@@ -38,5 +38,6 @@ public class BaseShootingDamageEffect : CardEffect
     public override void Activate() {
         Tile selectedTile = GridManager.I.currentSelectedTile;
         ApplyShootingDamage(selectedTile, damage, secondsToDisplay: secondsToDisplay);
+        AudioManager.I.PlaySound(SoundType.Riffle);
     }
 }

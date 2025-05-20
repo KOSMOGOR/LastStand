@@ -58,6 +58,7 @@ public class Player : MonoBehaviour
         }
         if (GameManager.I.currentState != GameState.PlayerTurn) return;
         SetCardSelectorCard(card);
+        AudioManager.I.PlaySound(SoundType.UIClick);
         if (card != null && card.IsInHand()) {
             chosenCard = card;
             chosenCard.SetChosenStatus(true);
