@@ -67,13 +67,12 @@ public class Player : MonoBehaviour
             chosenCard = null;
         }
         if (GameManager.I.currentState != GameState.PlayerTurn) return;
+        if (card == null || !card.IsInHand()) return;
         SetCardSelectorCard(card);
         AudioManager.I.PlaySound(SoundType.UIClick);
-        if (card != null && card.IsInHand()) {
-            chosenCard = card;
-            chosenCard.SetChosenStatus(true);
-            GridManager.I.SetCurrentGridSelectionType(chosenCard.cardData.gridSelectionType);
-        }
+        chosenCard = card;
+        chosenCard.SetChosenStatus(true);
+        GridManager.I.SetCurrentGridSelectionType(chosenCard.cardData.gridSelectionType);
     }
 
     public void ChooseNullCard() {
@@ -90,6 +89,7 @@ public class Player : MonoBehaviour
 
     public bool CanPlayChosenCard() {
         if (GameManager.I.currentState != GameState.PlayerTurn || chosenCard == null) return false;
+        if (!chosenCard.IsInHand()) return false;
         if (GridManager.I.currentSelectedTile == null && chosenCard.cardData.gridSelectionType != GridSelectionType.None) return false;
         if (playOpportunities == 0) return false;
         return chosenCard.CanPlay();

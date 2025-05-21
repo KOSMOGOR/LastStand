@@ -73,8 +73,6 @@ public class ShopManager : MonoBehaviour
 
     public void ChooseShopCard(ShopCard shopCard) {
         SetShopCardSelectorCard(shopCard);
-        if (shopCard == null) { chosenShopCard = null; return; }
-        if (GameManager.I.currentState != GameState.Shopping || !shopCards.Contains(shopCard)) return;
         chosenShopCard = shopCard;
     }
 
@@ -95,7 +93,7 @@ public class ShopManager : MonoBehaviour
     }
 
     bool CanExitShop() {
-        return shopCards.Count == 0 || shopCards.All(sc => sc.cardCost > Player.I.digitalCurrency);
+        return shopCards.Count == 0 || shopCards.All(sc => sc == null || sc.cardCost > Player.I.digitalCurrency);
     }
 
     public void ExitShop() {
@@ -126,7 +124,7 @@ public class ShopManager : MonoBehaviour
     }
 
     void ResetReroll() {
-        rerollPrice = (int)(GameManager.I.currentLevel * 0.1) * 25 + 50;
+        rerollPrice = (int)(GameManager.I.currentLevel * 0.1) * 5 + 10;
         rerollPriceRiced = 0;
     }
 

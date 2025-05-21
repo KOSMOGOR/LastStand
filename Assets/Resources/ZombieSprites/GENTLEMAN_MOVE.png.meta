@@ -140,7 +140,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GENTLEMAN_WALK_0
+      name: GENTLEMAN_MOVE_0
       rect:
         serializedVersion: 2
         x: 0
@@ -153,16 +153,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d914e2dada3854680800000000000000
-      internalID: -8771459917276102243
+      spriteID: 33e88d9bb0361d9468baf79eb999a440
+      internalID: -1626428039
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GENTLEMAN_WALK_1
+      name: GENTLEMAN_MOVE_1
       rect:
         serializedVersion: 2
         x: 32
@@ -175,16 +175,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: fc5a01e4631b4aef0800000000000000
-      internalID: -97758445099244081
+      spriteID: 94475c3c5384b404c8cfcc31d065956e
+      internalID: 1452788753
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GENTLEMAN_WALK_2
+      name: GENTLEMAN_MOVE_2
       rect:
         serializedVersion: 2
         x: 64
@@ -197,16 +197,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b0cd2577546041a90800000000000000
-      internalID: -7344238196910007285
+      spriteID: f931bad55d4a9424abdb9287498ac67b
+      internalID: -375417808
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GENTLEMAN_WALK_3
+      name: GENTLEMAN_MOVE_3
       rect:
         serializedVersion: 2
         x: 96
@@ -219,16 +219,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d0ad3466ce7439d00800000000000000
-      internalID: 978204624723106317
+      spriteID: edbe8c61dc5b64743bc807ef7a6fc79f
+      internalID: 394449067
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GENTLEMAN_WALK_4
+      name: GENTLEMAN_MOVE_4
       rect:
         serializedVersion: 2
         x: 128
@@ -241,16 +241,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 19e050d954320ffc0800000000000000
-      internalID: -3463229331553841519
+      spriteID: 72ff430ee5c828d43b5d112f092cc434
+      internalID: 391631930
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GENTLEMAN_WALK_5
+      name: GENTLEMAN_MOVE_5
       rect:
         serializedVersion: 2
         x: 160
@@ -263,16 +263,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 495e9133893bdd0b0800000000000000
-      internalID: -5702204086907443820
+      spriteID: 6c96c301dc95b46438ea23f159c1ff2e
+      internalID: 798891521
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GENTLEMAN_WALK_6
+      name: GENTLEMAN_MOVE_6
       rect:
         serializedVersion: 2
         x: 192
@@ -285,16 +285,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 06ddd8e322323c4d0800000000000000
-      internalID: -3115607887224906400
+      spriteID: 3141144f157484344b2019d0c0581b2a
+      internalID: -1197840226
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GENTLEMAN_WALK_7
+      name: GENTLEMAN_MOVE_7
       rect:
         serializedVersion: 2
         x: 224
@@ -307,16 +307,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 933422975f8db5a20800000000000000
-      internalID: 3052271721284518713
+      spriteID: 6132b226c3d8858478774af842393252
+      internalID: -1085472067
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GENTLEMAN_WALK_8
+      name: GENTLEMAN_MOVE_8
       rect:
         serializedVersion: 2
         x: 256
@@ -329,16 +329,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b6bd772c66655a6b0800000000000000
-      internalID: -5285723588300121237
+      spriteID: 741316a3e024d2341bbebd7bdb73571c
+      internalID: 230473757
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GENTLEMAN_WALK_9
+      name: GENTLEMAN_MOVE_9
       rect:
         serializedVersion: 2
         x: 288
@@ -351,10 +351,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: eca87a338c49c60c0800000000000000
-      internalID: -4581123133361648946
+      spriteID: bf08e832c02cbf4459f551c782ce5fe6
+      internalID: -510880078
       vertices: []
       indices: 
       edges: []
@@ -373,16 +373,16 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      GENTLEMAN_WALK_0: -8771459917276102243
-      GENTLEMAN_WALK_1: -97758445099244081
-      GENTLEMAN_WALK_2: -7344238196910007285
-      GENTLEMAN_WALK_3: 978204624723106317
-      GENTLEMAN_WALK_4: -3463229331553841519
-      GENTLEMAN_WALK_5: -5702204086907443820
-      GENTLEMAN_WALK_6: -3115607887224906400
-      GENTLEMAN_WALK_7: 3052271721284518713
-      GENTLEMAN_WALK_8: -5285723588300121237
-      GENTLEMAN_WALK_9: -4581123133361648946
+      GENTLEMAN_MOVE_0: -1626428039
+      GENTLEMAN_MOVE_1: 1452788753
+      GENTLEMAN_MOVE_2: -375417808
+      GENTLEMAN_MOVE_3: 394449067
+      GENTLEMAN_MOVE_4: 391631930
+      GENTLEMAN_MOVE_5: 798891521
+      GENTLEMAN_MOVE_6: -1197840226
+      GENTLEMAN_MOVE_7: -1085472067
+      GENTLEMAN_MOVE_8: 230473757
+      GENTLEMAN_MOVE_9: -510880078
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
